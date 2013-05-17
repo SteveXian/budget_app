@@ -1,10 +1,11 @@
 # Django settings for budgetTool project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('admin', 'admin'),
 )
 
 MANAGERS = ADMINS
@@ -57,11 +58,13 @@ MEDIA_ROOT = ''
 # Examples: "http://example.com/media/", "http://media.example.com/"
 MEDIA_URL = ''
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = PROJECT_ROOT + '/../static'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -104,6 +107,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'budgetTool.urls'
 
+LOGIN_URL = 'login/'
+
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'budgetTool.wsgi.application'
 
@@ -120,14 +125,15 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'budget',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
 
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config(default="postgres://django_login:cat@localhost/django_db")
+DATABASES['default'] =  dj_database_url.config(default="postgres://budget:cat@localhost/budget_db")
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # A sample logging configuration. The only tangible logging

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+{% load staticfiles %}
+<head>
+  <link href="/static/budget/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="/static/budget/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/budget/js/bootstrap.min.js"></script>
+  <title>{% block title %}{% endblock %}</title>
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}            
+
+</body>
+</html>
