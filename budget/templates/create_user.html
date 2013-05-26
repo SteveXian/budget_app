@@ -6,7 +6,9 @@
     <div class="control-group">
         <label class="control-label"  for="username">Username</label>
         <div class="controls">
-            <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+            <input type="text" id="username" name="username" placeholder="" class="input-xlarge">        
+            <span id="username_avail" style="color:green;display:none;">Username Available</span>
+            <span id="username_unavail" style="color:red;display:none;">Username Unavailable</span>
         </div>
     </div>
 
@@ -29,5 +31,23 @@
             <button class="btn btn-success">Create User</button>
         </div>
     </div>
-</form>             
+</form>
+<script type="text/javascript"> 
+$(function() {
+    $('#username').focusout(function() {
+        $.ajax({
+            type: "POST",
+            url: "/check_username",
+            data: { username: $('#username').val()}
+        }).done(function( msg ) {
+            $("#username_unavail").hide();
+            $("#username_avail").show();
+        }).fail(function() { 
+            $("#username_unavail").show();
+            $("#username_avail").hide();
+        });
+    });
+});
+
+</script>             
 {% endblock %}

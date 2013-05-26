@@ -30,6 +30,15 @@ def new_user(request):
 
 @csrf_exempt
 @require_POST
+def check_username(request):
+    data = request.POST
+    num_results = User.objects.filter(username = data['username']).count()
+    if num_results != 0:
+        return HttpResponseBadRequest("username duplicate")
+    return HttpResponse("Okay")
+
+@csrf_exempt
+@require_POST
 def create_user(request):
     data = request.POST
     print data
