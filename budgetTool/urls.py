@@ -20,4 +20,5 @@ urlpatterns = patterns('',
     url(r'^new_user/$', 'budget.views.new_user'),
     url(r'^check_username$', 'budget.views.check_username'),
     url(r'^create_user/$', 'budget.views.create_user'),
+    url(r'^logout/$', 'budget.views.user_logout'),
 )

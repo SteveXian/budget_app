@@ -3,16 +3,20 @@ from django.http import HttpResponse, Http404, HttpResponseBadRequest
 from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 
 @login_required 
 def index(request):
-    return HttpResponse("Logged in")
+    return render(request, 'index.html', {})
 
 def user_login(request):
     return render(request, 'login.html', {})
+
+def user_logout(request):
+    logout(request)
+    return redirect('/')
 
 @csrf_exempt
 @require_POST
