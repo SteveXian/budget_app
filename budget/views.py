@@ -6,10 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
-
-@login_required 
-def index(request):
-    return render(request, 'index.html', {})
+from budget.models import BudgetUser
 
 def user_login(request):
     return render(request, 'login.html', {})
@@ -17,6 +14,46 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('/')
+
+@login_required 
+def user_edit(request):
+    return render(request, 'user_edit.html', {})
+
+@login_required 
+@csrf_exempt
+@require_POST
+def user_update(request):
+    user_id = request.user.id
+
+    if BudgetUser.objects.filter(user_id=user_id).count() != 0:
+        user = BudgetUser.objects.get(user_id = user_id)
+    else:
+        user = BudgetUser()
+
+    user.user_id = user_id
+    user.first_name = request.POST['first_name']
+    user.last_name = request.POST['last_name']
+    user.program = request.POST['program']
+    user.program_length = request.POST['program_length']
+    user.current_year = request.POST['current_year']
+    user.coop = request.POST['coop']
+    user.sequence = request.POST['sequence']
+
+    user.save()
+
+    return redirect('/')
+
+@login_required
+def user(request):
+    user = BudgetUser.objects.get(user_id=request.user.id)
+    return render(request, 'user.html', {'user':user})
+
+@login_required 
+@csrf_exempt
+@require_POST
+def planning_update(request):
+    print request.POST
+    return HttpResponse(request.POST['value'])
 
 @csrf_exempt
 @require_POST

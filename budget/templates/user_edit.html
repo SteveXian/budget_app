@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form class="form-horizontal" action='/user/update/' method="POST">  
+    <div class="control-group">
+        <label class="control-label"  for="first_name">First Name</label>
+        <div class="controls">
+            <input type="text" id="first_name" name="first_name" placeholder="" class="input-xlarge">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label"  for="last_name">Last Name</label>
+        <div class="controls">
+            <input type="text" id="last_name" name="last_name" placeholder="" class="input-xlarge">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label"  for="program">program</label>
+        <div class="controls">
+            <input type="text" id="program" name="program" placeholder="" class="input-xlarge">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label"  for="program_length">Program Length</label>
+        <div class="controls">
+            <input type="text" id="program_length" name="program_length" placeholder="" class="input-xlarge">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label"  for="current_year">Current Year</label>
+        <div class="controls">
+            <input type="text" id="current_year" name="current_year" placeholder="" class="input-xlarge">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label"  for="coop">Coop</label>
+        <div class="controls">
+            <input type="text" id="coop" name="coop" placeholder="" class="input-xlarge">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label"  for="sequence">Sequence</label>
+        <div class="controls">
+            <input type="text" id="sequence" name="sequence" placeholder="" class="input-xlarge">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <button class="btn btn-success">Create Budget User</button>
+        </div>
+    </div>
+</form>  
+
+<br />
+
+<a href="/logout/"> Log Out </a>
+
+{% endblock %}

@@ -14,11 +14,16 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'budget.views.index'),
+    url(r'^$', 'budget.views.user'),
     url(r'^login/$', 'budget.views.user_login'),
     url(r'^login_auth/$', 'budget.views.login_auth'),
     url(r'^new_user/$', 'budget.views.new_user'),
     url(r'^check_username$', 'budget.views.check_username'),
     url(r'^create_user/$', 'budget.views.create_user'),
     url(r'^logout/$', 'budget.views.user_logout'),
+
+    url(r'^user/update/$', 'budget.views.user_update'),
+    url(r'^user/edit/$', 'budget.views.user_edit'),
+
+    url(r'^planning/update/$', 'budget.views.planning_update'),
 )

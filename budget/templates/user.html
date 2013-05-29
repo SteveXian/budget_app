@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Budget Planning {% endblock %}
+
+{% block content %}
+
+{{user.first_name}}
+
+<div class="row">
+    <div style="background-color:red;" class="span4" year=2013 term="F" cat="Food">1</div>
+    <div style="background-color:blue;" class="span4" year=2013 term="W" cat="Food">2</div>
+    <div style="background-color:green;" class="span4" year=2013 term="S" cat="Food">3</div>
+</div>
+
+
+<div class="edit" id="div_1">Dolor</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+     $('.edit').editable('/planning/update/');
+});
+
+</script>
+
+{% endblock %}
