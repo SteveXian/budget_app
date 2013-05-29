@@ -1,0 +1,6 @@
+.table th, .table td {
+    text-align:center;   
+}
+
+table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
