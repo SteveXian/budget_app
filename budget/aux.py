@@ -31,7 +31,7 @@ def parse_preset_data(data_set):
 def initiate_user_preset_data(program, user):
     inserts = []
     data_set = BudgetPresetData.objects.filter(program=program)
-    cnt = 0
+    cnt = ((user.current_year - 1) * 3)
     for year in range(user.current_year, user.program_length+1):
         for term in [FALL, WINTER, SPRING]:
             coop = True if user.sequence[cnt] == 'W' else False
@@ -42,6 +42,7 @@ def initiate_user_preset_data(program, user):
                     label = data.label,
                     year = year,
                     term = term,
+                    income = data.income,
                     amount = data.amount,
                     created = datetime.today(),
                     modified = datetime.today(),
@@ -49,25 +50,29 @@ def initiate_user_preset_data(program, user):
             cnt += 1
     BudgetPlanningData.objects.bulk_create(inserts)
 
-def parse_data_for_view(user, data_set):
+def format_data_for_view(user, data_set):
     res = {}
     for income in [True, False]:
         set_income = data_set.filter(income=income)
-        dict_income = {}
+        dict_income = []
         categories = set()
         for item in set_income:
             categories.add(item.label)
         for label in categories:
             set_label = set_income.filter(label=label)
-            dict_label = {}
+            label_item = {}
+            label_item['label'] = label
+            label_item['data'] = []
             for year in range(user.current_year, user.program_length+1):
                 set_year = set_label.filter(year=year)
-                dict_year = {}
-                dict_year[FALL] = set_year.get(term=FALL)
-                dict_year[WINTER] = set_year.get(term=WINTER)
-                dict_year[SPRING] = set_year.get(term=SPRING)
-                dict_label[year] = dict_year
-            dict_income[label] = dict_label
+                for term in [FALL, WINTER, SPRING]:
+                    data = set_year.get(term=term)
+                    formatted = {}
+                    formatted['class'] = str(year)+term
+                    formatted['id'] = label + '_' + str(year)+term
+                    formatted['amount'] = data.amount
+                    label_item['data'].append(formatted)
+            dict_income.append(label_item)
         if income:
             res['income'] = dict_income
         else:

@@ -7,6 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from budget.models import BudgetUser, BudgetPlanningData
+from budget.aux import format_data_for_view, initiate_user_preset_data
 import re
 
 DATA_ID_RE = '(?P<category>[a-zA-Z_]*)_(?P<year>\d)(?P<term>.)'
@@ -52,21 +53,11 @@ def user(request):
     user = BudgetUser.objects.get(user_id=request.user.id)
     data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
 
-    test = {
-        'income': {
-            1: {
-                'F': {
-                    'Salary': 1337.00,
-                    'Loan': 500.00,
-                }
-            }
-        }
-    }
-
+    parsed_data = parse_data_for_view(user, data_set)
 
     return render(request, 'user.html', {
         'user':user,
-        'test':test,
+        'data':parsed_data,
     })
 
 @login_required 

@@ -7,9 +7,43 @@
 {{user.first_name}}
 <br/>
 
-{{test.income.1.F.Salary}}
+{{data.income.1.data.3.S.amount}}
 <br/>
-{{test.income.1.F.Loan}}
+{{data.income.Other.3.F.amount}}
+
+<div class="container" style="width:80%;">
+<table class="table fixed" style="width:95%;">
+    <thead>
+        <tr>
+            <td></td>
+            <th colspan="3">Year 3</th>
+            <th colspan="3">Year 4</th>
+            <th colspan="3">Year 5</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Fall</td>
+            <td>Winter</td>
+            <td>Spring</td>
+            <td>Fall</td>
+            <td>Winter</td>
+            <td>Spring</td>
+            <td>Fall</td>
+            <td>Winter</td> 
+            <td>Spring</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Inflows</b></td>
+            <td colspan="12"></td>
+        </tr>
+        {% for label_item in data.income %}
+        <tr>
+            <td>{{label_item.category}}</td>
+        </tr>
+        {% endfor %}
+</div>
 
 <div class="container" style="width:80%;">
 
