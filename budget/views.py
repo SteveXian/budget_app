@@ -6,7 +6,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
-from budget.models import BudgetUser
+from budget.models import BudgetUser, BudgetPlanningData
+import re
+
+DATA_ID_RE = '(?P<category>[a-zA-Z_]*)_(?P<year>\d)(?P<term>.)'
 
 def user_login(request):
     return render(request, 'login.html', {})
@@ -36,6 +39,7 @@ def user_update(request):
     user.program = request.POST['program']
     user.program_length = request.POST['program_length']
     user.current_year = request.POST['current_year']
+    user.current_term = request.POST['current_term']
     user.coop = request.POST['coop']
     user.sequence = request.POST['sequence']
 
@@ -46,13 +50,31 @@ def user_update(request):
 @login_required
 def user(request):
     user = BudgetUser.objects.get(user_id=request.user.id)
-    return render(request, 'user.html', {'user':user})
+    data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
+
+    test = {
+        'income': {
+            1: {
+                'F': {
+                    'Salary': 1337.00,
+                    'Loan': 500.00,
+                }
+            }
+        }
+    }
+
+
+    return render(request, 'user.html', {
+        'user':user,
+        'test':test,
+    })
 
 @login_required 
 @csrf_exempt
 @require_POST
 def planning_update(request):
-    print request.POST
+    data_id = request.POST['id']
+
     return HttpResponse(request.POST['value'])
 
 @csrf_exempt

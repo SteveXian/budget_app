@@ -1,0 +1,8 @@
+user.html:
+    add .00 after float if not 2 digits
+    check user input is sanitary
+    think about whether clicking on the div is the best way to edit, not obvious
+
+models:
+
+    what to do about monthly or weekly tracking
