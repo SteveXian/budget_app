@@ -24,6 +24,7 @@ def parse_preset_data(data_set):
             label=data['label'],
             year=data['year'],
             coop=data['coop'],
+            income=data['income'],
             amount=data['amount'],
         ))
     BudgetPresetData.objects.bulk_create(inserts)

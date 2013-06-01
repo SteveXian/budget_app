@@ -3,9 +3,11 @@
 {% load staticfiles %}
 <head>
   <link href="/static/budget/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/budget/css/bootstrap-responsive.min.css" rel="stylesheet">
   <link href="/static/budget/css/custom.css" rel="stylesheet">
   <script type="text/javascript" src="/static/budget/js/jquery.min.js"></script>
   <script type="text/javascript" src="/static/budget/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/static/budget/js/bootstrap-responsive.min.js"></script>
   <script type="text/javascript" src="/static/budget/js/jquery.jeditable.mini.js"></script>
 
   <title>{% block title %}{% endblock %}</title>
@@ -13,8 +15,24 @@
 </head>
 <body>
 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Waterloo Banking Budget</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="/">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="width:85%">
 {% block content %}{% endblock %}
-{% block footer %}{% endblock %}            
+{% block footer %}{% endblock %} 
+    </div>           
 
 </body>
 </html>

@@ -4,152 +4,112 @@
 
 {% block content %}
 
-{{user.first_name}}
-<br/>
+<br/><br/><br/>
 
-{{data.income.1.data.3.S.amount}}
-<br/>
-{{data.income.Other.3.F.amount}}
+<div class="row">
+<div class="span3 bordered">
+<table class="table">
+    <tr><td>Name</td><td> {{budget_user.first_name}} {{budget_user.last_name}}<td/></tr>
+    <tr><td>Program</td><td> {{budget_user.program}}<td/></tr>
+    <tr><td>Program Length</td><td> {{budget_user.program_length}}<td/></tr>
+    <tr><td>Current Year</td><td> {{budget_user.current_year}}<td/></tr>
+    <tr><td>Current Term</td><td> {{budget_user.current_term}}<td/></tr>
+    <tr><td>Sequence</td><td> {{budget_user.sequence}}<td/></tr>
+    <tr><td>Coop</td><td> {{budget_user.coop}}<td/></tr>
 
-<div class="container" style="width:80%;">
+</table>
+</div>
+<div class="span12 bordered">
 <table class="table fixed" style="width:95%;">
     <thead>
         <tr>
             <td></td>
-            <th colspan="3">Year 3</th>
-            <th colspan="3">Year 4</th>
-            <th colspan="3">Year 5</th>
+            {% for year in budget_user.remaining_years %}
+            <th colspan="3">Year {{year}}</th>
+            {% endfor %}
         </tr>
         <tr>
             <td></td>
+            {% for year in budget_user.remaining_years %}
             <td>Fall</td>
             <td>Winter</td>
             <td>Spring</td>
-            <td>Fall</td>
-            <td>Winter</td>
-            <td>Spring</td>
-            <td>Fall</td>
-            <td>Winter</td> 
-            <td>Spring</td>
+            {% endfor %}
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><b>Inflows</b></td>
-            <td colspan="12"></td>
+            <td colspan="{{budget_user.remaining_terms}}"></td>
         </tr>
-        {% for label_item in data.income %}
+        {% for row in data.income %}
         <tr>
-            <td>{{label_item.category}}</td>
+            <td>{{row.label}}</td>
+            {% for item in row.data %}
+            <td><div class="edit {{item.class}}_inflow" id="{{item.id}}">{{item.amount}}</div> </td>
+            {% endfor %}
         </tr>
         {% endfor %}
-</div>
-
-<div class="container" style="width:80%;">
-
-<table class="table fixed" style="width:95%;">
-    <thead>
         <tr>
-            <td></td>
-            <th colspan="3">Year 1</th>
-            <th colspan="3">Year 2</th>
-            <th colspan="3">Year 3</th>
-            <th colspan="3">Year 4</th>
+            <td style="text-align:right;"><b>Total Inflow</b></td>
+            {% for year in budget_user.remaining_years %}
+            <td><div id="{{year}}F_inflow_sum"></div> </td>
+            <td><div id="{{year}}W_inflow_sum"></div></td>
+            <td><div id="{{year}}S_inflow_sum"></div></td>
+            {% endfor %}
         </tr>
         <tr>
             <td></td>
-            <td>Fall</td>
-            <td>Winter</td>
-            <td>Spring</td>
-            <td>Fall</td>
-            <td>Winter</td>
-            <td>Spring</td>
-            <td>Fall</td>
-            <td>Winter</td> 
-            <td>Spring</td>
-            <td>Fall</td>
-            <td>Winter</td>
-            <td>Spring</td>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <td><b>Inflows</b></td>
-            <td colspan="12"></td>
+            <td colspan="{{budget_user.remaining_terms}}"></td>
         </tr>
         <tr>
-            <td>Salary</td>
-            <td><div class="edit 1F_inflow" id="salary_1F">200.00</div> </td>
-            <td><div class="edit 1W_inflow" id="salary_1W">200.00</div></td>
-            <td><div class="edit 1S_inflow" id="salary_1S">200.00</div></td>
-            <td><div class="edit 2F_inflow" id="salary_2F">200.00</div></td>
-            <td><div class="edit 2W_inflow" id="salary_2W">200.00</div></td>
-            <td><div class="edit 2S_inflow" id="salary_2S">200.00</div></td>
-            <td><div class="edit 3F_inflow" id="salary_3F">200.00</div></td>
-            <td><div class="edit 3W_inflow" id="salary_3W">200.00</div></td>
-            <td><div class="edit 3S_inflow" id="salary_3S">200.00</div></td>
-            <td><div class="edit 4F_inflow" id="salary_4F">200.00</div></td>
-            <td><div class="edit 4W_inflow" id="salary_4W">200.00</div></td>
-            <td><div class="edit 4S_inflow" id="salary_4S">200.00</div></td>
+            <td><b>OutFlows</b></td>
+            <td colspan="{{budget_user.remaining_terms}}"></td>
         </tr>
+        {% for row in data.expense %}
         <tr>
-            <td>Loan/OSAP</td>
-            <td><div class="edit 1F_inflow" id="div_1">200.00</div> </td>
-            <td><div class="edit 1W_inflow" id="div_2">200.00</div></td>
-            <td><div class="edit 1S_inflow" id="div_3">200.14</div></td>
-            <td><div class="edit 2F_inflow" id="div_4">200.00</div></td>
-            <td><div class="edit 2W_inflow" id="div_5">200.00</div></td>
-            <td><div class="edit 2S_inflow" id="div_6">200.00</div></td>
-            <td><div class="edit 3F_inflow" id="div_7">200.00</div></td>
-            <td><div class="edit 3W_inflow" id="div_8">200.00</div></td>
-            <td><div class="edit 3S_inflow" id="div_9">200.00</div></td>
-            <td><div class="edit 4F_inflow" id="div_10">200.00</div></td>
-            <td><div class="edit 4W_inflow" id="div_11">200.00</div></td>
-            <td><div class="edit 4S_inflow" id="div_12">200.00</div></td>
+            <td>{{row.label}}</td>
+            {% for item in row.data %}
+            <td><div class="edit {{item.class}}_outflow" id="{{item.id}}">{{item.amount}}</div> </td>
+            {% endfor %}
         </tr>
-        <tr>
-            <td>Other</td>
-            <td><div class="edit 1F_inflow" id="div_1">200.00</div> </td>
-            <td><div class="edit 1W_inflow" id="div_2">200.00</div></td>
-            <td><div class="edit 1S_inflow" id="div_3">200.00</div></td>
-            <td><div class="edit 2F_inflow" id="div_4">200.00</div></td>
-            <td><div class="edit 2W_inflow" id="div_5">200.00</div></td>
-            <td><div class="edit 2S_inflow" id="div_6">200.00</div></td>
-            <td><div class="edit 3F_inflow" id="div_7">200.00</div></td>
-            <td><div class="edit 3W_inflow" id="div_8">200.00</div></td>
-            <td><div class="edit 3S_inflow" id="div_9">200.00</div></td>
-            <td><div class="edit 4F_inflow" id="div_10">200.00</div></td>
-            <td><div class="edit 4W_inflow" id="div_11">200.00</div></td>
-            <td><div class="edit 4S_inflow" id="div_12">200.00</div></td>
-        </tr>
-        <tr>
-            <td style="text-align:right;"><b>Total Inflows</b></td>
-            <td><div id="1F_inflow_sum"></div> </td>
-            <td><div id="1W_inflow_sum"></div></td>
-            <td><div id="1S_inflow_sum"></div></td>
-            <td><div id="2F_inflow_sum"></div></td>
-            <td><div id="2W_inflow_sum"></div></td>
-            <td><div id="2S_inflow_sum"></div></td>
-            <td><div id="3F_inflow_sum"></div></td>
-            <td><div id="3W_inflow_sum"></div></td>
-            <td><div id="3S_inflow_sum"></div></td>
-            <td><div id="4F_inflow_sum"></div></td>
-            <td><div id="4W_inflow_sum"></div></td>
-            <td><div id="4S_inflow_sum"></div></td>
-        </tr>
-
-        <tr><td colspan="13"></td></tr>
+        {% endfor %}
 
         <tr>
-            <td><b>Outflows</b></td>
-            <td colspan="12"></td>
+            <td style="text-align:right;"><b>Total Outflow</b></td>
+            {% for year in budget_user.remaining_years %}
+            <td><div id="{{year}}F_outflow_sum"></div> </td>
+            <td><div id="{{year}}W_outflow_sum"></div></td>
+            <td><div id="{{year}}S_outflow_sum"></div></td>
+            {% endfor %}
         </tr>
-
-
+        <tr>
+            <td></td>
+            <td colspan="{{budget_user.remaining_terms}}"></td>
+        </tr>
+        <tr>
+            <td><b>Term Balance</b></td>
+            {% for year in budget_user.remaining_years %}
+            <td><div id="{{year}}F_term_sum"></div> </td>
+            <td><div id="{{year}}W_term_sum"></div></td>
+            <td><div id="{{year}}S_term_sum"></div></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            <td><b>Cumulative Balance</b></td>
+            {% for year in budget_user.remaining_years %}
+            <td><div id="{{year}}F_cumu_sum"></div> </td>
+            <td><div id="{{year}}W_cumu_sum"></div></td>
+            <td><div id="{{year}}S_cumu_sum"></div></td>
+            {% endfor %}
+        </tr>
 
     </tbody>
 </table>
+</div>
+</div>
+
+
 </div>
 
 <script type="text/javascript">
@@ -158,12 +118,13 @@ var budget_global = {}
 
 budget_global.sum = 0;
 budget_global.TERMS = ['F','W','S'];
-budget_global.YEARS = 4;
+budget_global.CURRENT_YEAR = {{budget_user.current_year}};
+budget_global.PROGRAM_LENGTH = {{budget_user.program_length}};
 budget_global.INFLOW = 'inflow';
 budget_global.OUTFLOW = 'outflow';
 
-function calc_totals(flow) {
-    for (var year = 1; year <= budget_global.YEARS; year++) {
+function calc_partials(flow) {
+    for (var year = budget_global.CURRENT_YEAR; year <= budget_global.PROGRAM_LENGTH; year++) {
         for (var i = 0; i < budget_global.TERMS.length; i++) {
 
             $('.' + year + budget_global.TERMS[i] + '_' + flow).each(function() {
@@ -176,16 +137,37 @@ function calc_totals(flow) {
     }
 }
 
+function calc_cumu() {
+    var cumu_total = 0;
+    for (var year = budget_global.CURRENT_YEAR; year <= budget_global.PROGRAM_LENGTH; year++) {
+        for (var i = 0; i < budget_global.TERMS.length; i++) {
+
+            var inflow = parseFloat($('#' + year + budget_global.TERMS[i] + '_inflow_sum').html());
+            var outflow = parseFloat($('#' + year + budget_global.TERMS[i] + '_outflow_sum').html());
+            var term_balance = inflow - outflow;
+            cumu_total += term_balance;
+            $('#' + year + budget_global.TERMS[i] + '_term_sum').html(term_balance);
+            $('#' + year + budget_global.TERMS[i] + '_cumu_sum').html(cumu_total);
+        }
+    }
+}
+
+function calc_totals(){
+    calc_partials(budget_global.INFLOW);
+    calc_partials(budget_global.OUTFLOW);
+    calc_cumu();
+}
+
 
 $(document).ready(function() {
 
     $('.edit').editable('/planning/update/', {
         callback : function(value, settings) {
-            calc_totals(budget_global.INFLOW);
+            calc_totals();
         }
     });
 
-    calc_totals(budget_global.INFLOW);
+    calc_totals();
 
 });
 

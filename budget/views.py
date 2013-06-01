@@ -8,9 +8,10 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from budget.models import BudgetUser, BudgetPlanningData
 from budget.aux import format_data_for_view, initiate_user_preset_data
+from decimal import *
 import re
 
-DATA_ID_RE = '(?P<category>[a-zA-Z_]*)_(?P<year>\d)(?P<term>.)'
+DATA_ID_RE = '(?P<category>[\/a-zA-Z_]*)_(?P<year>\d)(?P<term>.)'
 
 def user_login(request):
     return render(request, 'login.html', {})
@@ -50,23 +51,32 @@ def user_update(request):
 
 @login_required
 def user(request):
-    user = BudgetUser.objects.get(user_id=request.user.id)
+    budget_user = BudgetUser.objects.get(user_id=request.user.id)
     data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
 
-    parsed_data = parse_data_for_view(user, data_set)
-
+    data = format_data_for_view(budget_user, data_set)
+    budget_user.remaining_years = range(budget_user.current_year, budget_user.program_length + 1)
+    budget_user.remaining_terms = (budget_user.program_length - budget_user.current_year + 1) * 3
     return render(request, 'user.html', {
-        'user':user,
-        'data':parsed_data,
+        'budget_user':budget_user,
+        'data':data,
     })
 
 @login_required 
 @csrf_exempt
 @require_POST
 def planning_update(request):
+    print request.POST
     data_id = request.POST['id']
-
-    return HttpResponse(request.POST['value'])
+    result = re.match(DATA_ID_RE, data_id)
+    data = BudgetPlanningData.objects.get(  user_id = request.user.id, 
+                                            label = result.group('category'),
+                                            year = result.group('year'),
+                                            term = result.group('term'))
+    print data
+    data.amount = Decimal(request.POST['value'])
+    data.save()
+    return HttpResponse('%.2f' % data.amount)
 
 @csrf_exempt
 @require_POST
