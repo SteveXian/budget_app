@@ -7,6 +7,14 @@ table.fixed td { overflow: hidden; }
 
 .bordered {
     border-style:solid;
-    border-width:3px;
+    border-width:2px;
     padding:10px;
+}
+
+.red {
+    color:red;
+}
+
+.green {
+    color:green;
 }

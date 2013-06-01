@@ -49,7 +49,7 @@ class BudgetPlanningData(models.Model):
         super(BudgetPlanningData, self).save()
 
     def __unicode__(self):
-        return "{0} {1}: year {2} {3}".format( self.user_id, self.label, self.year, self.amount )
+        return "user {0} {1}: year {2} {3}".format( self.user_id, self.label, self.year, self.amount )
 
 class BudgetPresetData(models.Model):
     program = models.CharField(max_length=100, null=False)
@@ -62,3 +62,21 @@ class BudgetPresetData(models.Model):
     def __unicode__( self ):
         return "{0} {1}: year {2} {3}".format( self.program, self.label, self.year, self.amount )
 
+class BudgetTrackingData(models.Model):
+    user_id = models.IntegerField(null=False)
+    label = models.CharField(max_length=100)
+    description = models.CharField(max_length=2000)
+    year = models.IntegerField()
+    term = models.CharField(max_length=2, choices=TERMS)
+    amount = models.DecimalField(max_digits=19, decimal_places=2)
+    created = models.DateTimeField()
+    modified = models.DateTimeField()
+
+    def save(self):
+        if self.id is None:
+            self.created = datetime.today()
+        self.modified = datetime.today()
+        super(BudgetTrackingData, self).save()
+
+    def __unicode__(self):
+        return "user {0} {1} {2}: {3}".format( self.user_id, self.label, self.description, self.amount )

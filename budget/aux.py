@@ -1,6 +1,8 @@
 from budget.models import SPRING, FALL, WINTER
-from budget.models import BudgetUser, BudgetPlanningData, BudgetPresetData
-from datetime import datetime
+from budget.models import BudgetUser, BudgetPlanningData, BudgetPresetData, BudgetTrackingData
+from datetime import timedelta, datetime
+from django.utils import timezone
+
 EXAMPLE = [
     { 'income': True, 'program': 'default', 'label': 'Salary', 'year': 1, 'coop': False, 'amount': 0},
     { 'income': True, 'program': 'default', 'label': 'Salary', 'year': 1, 'coop': True, 'amount': 12000},
@@ -32,7 +34,7 @@ def parse_preset_data(data_set):
 def initiate_user_preset_data(program, user):
     inserts = []
     data_set = BudgetPresetData.objects.filter(program=program)
-    cnt = ((user.current_year - 1) * 3)
+    cnt = ((int(user.current_year) - 1) * 3)
     for year in range(user.current_year, user.program_length+1):
         for term in [FALL, WINTER, SPRING]:
             coop = True if user.sequence[cnt] == 'W' else False
@@ -79,3 +81,51 @@ def format_data_for_view(user, data_set):
         else:
             res['expense'] = dict_income
     return res
+
+TERM = {}
+TERM[1]='F'
+TERM[2]='W'
+TERM[3]='S'
+
+def get_limits(user_id):
+    user = BudgetUser.objects.get(user_id=user_id)
+    labels = BudgetPlanningData.objects.filter(income=False).values('label').distinct()
+    print user
+    plan_data = BudgetPlanningData.objects.filter(user_id=user_id, year=user.current_year, term=TERM[user.current_term])
+    current_data = BudgetTrackingData.objects.filter(user_id=user_id, year=user.current_year, term=user.current_term)
+    
+    limits = {}
+    for term in ['weekly', 'monthly', 'term']:
+        limits[term] = []
+        for label in labels:
+            plan = plan_data.get(label=label['label']).amount
+            label_data = {}
+            label_data['current'] = 0
+            label_data['label'] = label['label']
+            if term == 'weekly':
+                label_data['limit'] = (((plan/4)/30)*7)
+                monday_of_this_week = timezone.now().date() - timedelta(days=(timezone.now().date().isocalendar()[2] - 1))
+                for item in current_data.filter(created__gte=monday_of_this_week, label=label['label']):
+                    label_data['current'] += item.amount
+
+            elif term == "monthly":
+                label_data['limit'] = (plan/4)
+                last_month = timezone.now().date() - timedelta(days=30)
+                for item in current_data.filter(created__gte=last_month, label=label['label']):
+                    label_data['current'] += item.amount
+
+            elif term == 'term':
+                label_data['limit'] = plan
+                for item in current_data.filter(label=label['label']):
+                    label_data['current'] += item.amount
+
+            if label_data['current'] > label_data['limit']:
+                label_data['over'] = True
+            else:
+                label_data['over'] = False
+
+            label_data['limit'] = '%.2f' % label_data['limit']
+            limits[term].append(label_data)
+
+    print limits
+    return limits

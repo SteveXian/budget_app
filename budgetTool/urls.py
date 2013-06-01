@@ -26,4 +26,6 @@ urlpatterns = patterns('',
     url(r'^user/edit/$', 'budget.views.user_edit'),
 
     url(r'^planning/update/$', 'budget.views.planning_update'),
+    url(r'^tracking/$', 'budget.views.tracking'),
+    url(r'^tracking/add/$', 'budget.views.tracking_add'),
 )

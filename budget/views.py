@@ -6,8 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
-from budget.models import BudgetUser, BudgetPlanningData
-from budget.aux import format_data_for_view, initiate_user_preset_data
+from budget.models import BudgetUser, BudgetPlanningData, BudgetTrackingData
+from budget.aux import format_data_for_view, initiate_user_preset_data, get_limits
 from decimal import *
 import re
 
@@ -36,16 +36,21 @@ def user_update(request):
         user = BudgetUser()
 
     user.user_id = user_id
-    user.first_name = request.POST['first_name']
-    user.last_name = request.POST['last_name']
-    user.program = request.POST['program']
-    user.program_length = request.POST['program_length']
-    user.current_year = request.POST['current_year']
-    user.current_term = request.POST['current_term']
+    user.first_name = str(request.POST['first_name'])
+    user.last_name = str(request.POST['last_name'])
+    user.program = str(request.POST['program'])
+    user.program_length = int(request.POST['program_length'])
+    user.current_year = int(request.POST['current_year'])
+    user.current_term = int(request.POST['current_term'])
     user.coop = request.POST['coop']
-    user.sequence = request.POST['sequence']
+    user.sequence = str(request.POST['sequence'])
 
     user.save()
+
+    for item in BudgetPlanningData.objects.filter(user_id=user_id):
+        item.delete()
+
+    initiate_user_preset_data('default', user)
 
     return redirect('/')
 
@@ -66,17 +71,43 @@ def user(request):
 @csrf_exempt
 @require_POST
 def planning_update(request):
-    print request.POST
     data_id = request.POST['id']
     result = re.match(DATA_ID_RE, data_id)
     data = BudgetPlanningData.objects.get(  user_id = request.user.id, 
                                             label = result.group('category'),
                                             year = result.group('year'),
                                             term = result.group('term'))
-    print data
     data.amount = Decimal(request.POST['value'])
     data.save()
     return HttpResponse('%.2f' % data.amount)
+
+@login_required 
+def tracking(request):
+    data = BudgetTrackingData.objects.filter(user_id=request.user.id).order_by('-created')
+
+    limits = get_limits(request.user.id)    
+
+    return render(request, 'tracking.html', {
+        'data': data,
+        'limits': limits,
+    })
+
+@login_required 
+@csrf_exempt
+@require_POST
+def tracking_add(request):
+    budget_user = BudgetUser.objects.get(user_id=request.user.id)
+
+    data = BudgetTrackingData()
+    data.user_id = request.user.id
+    data.label = str(request.POST['category'])
+    data.description = str(request.POST['description'])
+    data.year = int(budget_user.current_year)
+    data.term = int(budget_user.current_term)
+    data.amount= Decimal(request.POST['amount'])
+    data.save()
+
+    return redirect('/tracking/')
 
 @csrf_exempt
 @require_POST
