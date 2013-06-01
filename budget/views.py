@@ -106,7 +106,11 @@ def tracking_add(request):
     data.term = int(budget_user.current_term)
     data.amount= Decimal(request.POST['amount'])
     data.save()
+    return redirect('/tracking/')
 
+@login_required 
+def tracking_delete(request, id):
+    BudgetTrackingData.objects.get(id=id).delete()
     return redirect('/tracking/')
 
 @csrf_exempt

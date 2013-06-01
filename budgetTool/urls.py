@@ -28,4 +28,5 @@ urlpatterns = patterns('',
     url(r'^planning/update/$', 'budget.views.planning_update'),
     url(r'^tracking/$', 'budget.views.tracking'),
     url(r'^tracking/add/$', 'budget.views.tracking_add'),
+    url(r'^tracking/delete/(\d*)$', 'budget.views.tracking_delete'),
 )
