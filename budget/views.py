@@ -52,7 +52,7 @@ def user_update(request):
 
     initiate_user_preset_data('default', user)
 
-    return redirect('/')
+    return redirect('/planning/')
 
 @login_required
 def user(request):
