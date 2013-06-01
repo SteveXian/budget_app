@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from budgetTool import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -30,4 +31,8 @@ urlpatterns = patterns('',
     url(r'^tracking/$', 'budget.views.tracking'),
     url(r'^tracking/add/$', 'budget.views.tracking_add'),
     url(r'^tracking/delete/(\d*)$', 'budget.views.tracking_delete'),
+)
+
+urlpatterns += patterns('',
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 )
