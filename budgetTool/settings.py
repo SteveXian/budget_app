@@ -8,6 +8,8 @@ ADMINS = (
     ('admin', 'admin'),
 )
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 MANAGERS = ADMINS
 
 DATABASES = {
@@ -57,8 +59,6 @@ MEDIA_ROOT = ''
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
 MEDIA_URL = ''
-
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
