@@ -1,0 +1,22 @@
+Bugs:
+- get error when password is wrong
+
+- On the planning page if enter a value with a comma in it, then it will not save. (ex. 2,400.00)
+
+- On the tracking page if you enter a comma or letter or leave the field blank or a very large number, then the webpage will return an invalid operation error/crash
+
+- Edit user page display the default and not the current settings for drop down menus choices
+
+Improvements:
+
+- Tracking expenses should be at top of page WIP
+
+- Housing/food budget too high
+
+- Has a name for the program been decided? “Waterloo Banking Budget”
+
+- Tracking page would benefit from income entries
+
+- Tracking page would benefit from ability to edit the date of the entry (if the expense/income happened on a day other than the current day)
+
+- once functionality is tested add in visual representation of plan and expense breakdown

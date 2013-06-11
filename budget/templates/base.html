@@ -20,6 +20,7 @@
         <div class="container">
           <a class="brand" href="/">Waterloo Banking Budget</a>
           <div class="nav-collapse collapse">
+            {% if user.is_authenticated %}
             <ul class="nav">
               <li class="{% block planning %}{% endblock %}">
                 <a href="/planning">Planning</a>
@@ -31,7 +32,7 @@
                 <a href="/user/edit/">Edit User</a>
               </li>
             </ul>
-
+            {% endif %}
           </div>
           <span style="float:right;padding-top:8px;color:white;">
             {% if user.is_authenticated %}

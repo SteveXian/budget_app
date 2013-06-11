@@ -28,6 +28,9 @@ def user_logout(request):
     logout(request)
     return redirect('/')
 
+def test(request):
+    return render(request, 'test.html', {})
+
 @login_required 
 def user_edit(request):
     budget_user = {}

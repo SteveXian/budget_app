@@ -67,8 +67,8 @@
         <label class="control-label" for="coop">Coop</label>
         <div class="controls">
             <select id="coop" name="coop" >
-                <option value="True">True</option>
-                <option value="False">False</option>
+                <option value="True">Yes</option>
+                <option value="False">No</option>
             </select>
         </div>
     </div>
@@ -115,6 +115,7 @@ $(document).ready(function() {
                                 '<label class="control-label" for="'+year+'_sequence">Year '+year+' Sequence</label>' +
                                 '<div class="controls">' +
                                     '<select id="'+year+'_sequence" name="'+year+'_sequence" >' +
+                                        '<option value="SSS">Study, Study, Study</option>' +
                                         '<option value="SSO">Study, Study, Off</option>' +
                                         '<option value="SOS">Study, Off, Study</option>' +
                                         '<option value="OSS">Off, Study, Study</option>' +

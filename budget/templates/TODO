@@ -3,16 +3,14 @@ user.html:
     check user input is sanitary
     think about whether clicking on the div is the best way to edit, not obvious
 
-models:
-
-    what to do about monthly or weekly tracking
-
 update and auto increment term
 
 fix the changing of length/width when changing from edit/view
 
-tonight:
-display sequence in the planning page
+add bootstrap tooltips
+
+user_edit:
+    how to keep the approperiate data
 
 bug:
 
