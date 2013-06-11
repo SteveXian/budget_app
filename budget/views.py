@@ -147,10 +147,12 @@ def login_auth(request):
     data = request.POST
     user = authenticate(username=data['username'], password=data['password'])
     if user is None:
-         raise Http404
-
-    login(request, user)
-    return redirect('/')
+        return render(request, 'login.html', {
+            'error': 'The username or password you entered was incorrect.',
+        })
+    else:
+        login(request, user)
+        return redirect('/')
 
 def new_user(request):
     return render(request, 'create_user.html', {})
