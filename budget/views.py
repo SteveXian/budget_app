@@ -13,6 +13,14 @@ import re
 
 DATA_ID_RE = '(?P<category>[\/a-zA-Z_]*)_(?P<year>\d)(?P<term>.)'
 
+@login_required 
+def index(request):
+    try:
+        budget_user = BudgetUser.objects.get(user_id = request.user.id)
+        return redirect('/planning/')
+    except:
+        return redirect('/user/edit/')
+
 def user_login(request):
     return render(request, 'login.html', {})
 
@@ -22,7 +30,14 @@ def user_logout(request):
 
 @login_required 
 def user_edit(request):
-    return render(request, 'user_edit.html', {})
+    budget_user = {}
+    try:
+        budget_user = BudgetUser.objects.get(user_id=request.user.id)
+    except:
+        pass
+    return render(request, 'user_edit.html', {
+        'budget_user': budget_user,
+    })
 
 @login_required 
 @csrf_exempt
@@ -35,6 +50,12 @@ def user_update(request):
     else:
         user = BudgetUser()
 
+    length = int(request.POST['program_length'])
+    current = int(request.POST['current_year'])
+    sequence = ''
+    for year in range(current, length+1):
+        sequence += request.POST[str(year)+'_sequence']
+
     user.user_id = user_id
     user.first_name = str(request.POST['first_name'])
     user.last_name = str(request.POST['last_name'])
@@ -43,7 +64,7 @@ def user_update(request):
     user.current_year = int(request.POST['current_year'])
     user.current_term = int(request.POST['current_term'])
     user.coop = request.POST['coop']
-    user.sequence = str(request.POST['sequence'])
+    user.sequence = sequence
 
     user.save()
 

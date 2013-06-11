@@ -8,6 +8,7 @@
 
 <br/>
 
+<div class="container">
 <div class="row">
 <div class="span3 ordered">
     <h4>Current Week</h4>
@@ -79,12 +80,12 @@
     </table>
 <br/>
 </div>
-<div class="span12">
+<div class="span8">
 
-    <div style="padding:20px;padding-bottom:30px;">
+    <div style="padding-bottom:30px;">
         <form class="form-horizontal" action='/tracking/add/' method="POST">
-            <div class="span3">  
-                <select id="category" name="category">
+            <div class="span2 input-large" style="margin-left:0px;">  
+                <select id="category" name="category" class="span2">
                     <option value="" selected="selected">Choose Category</option>
                     <option value="Food">Food</option>
                     <option value="School">School</option>
@@ -93,12 +94,12 @@
                     <option value="Other">Other</option>
                 </select>
             </div>
-            <div class="span3">
-                <input type="text" id="description" name="description" placeholder="Description" class="input-xlarge">
+            <div class="span2">
+                <input type="text" id="description" name="description" placeholder="Description" class="input-large">
             </div>
-            <div class="input-prepend span3">
+            <div class="input-prepend span2">
                 <span class="add-on">$</span>
-                <input type="text" id="amount" name="amount" placeholder="Amount" class="input-medium">
+                <input type="text" id="amount" name="amount" placeholder="Amount" class="input-small">
             </div>
             <div class="span2">
                 <button class="btn btn-success">Add Item</button>
@@ -130,7 +131,7 @@
         </table>
     </div>
 </div>
-
+</div>
 </div>
 
 {% endblock %}

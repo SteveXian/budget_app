@@ -34,22 +34,35 @@ def parse_preset_data(data_set):
 def initiate_user_preset_data(program, user):
     inserts = []
     data_set = BudgetPresetData.objects.filter(program=program)
-    cnt = ((int(user.current_year) - 1) * 3)
+    cnt = 0
     for year in range(user.current_year, user.program_length+1):
         for term in [FALL, WINTER, SPRING]:
             coop = True if user.sequence[cnt] == 'W' else False
             program_data  = data_set.filter(year=year, coop=coop)
-            for data in program_data:
-                inserts.append(BudgetPlanningData(
-                    user_id = user.user_id,
-                    label = data.label,
-                    year = year,
-                    term = term,
-                    income = data.income,
-                    amount = data.amount,
-                    created = datetime.today(),
-                    modified = datetime.today(),
-                ))
+            if user.sequence[cnt] == 'O':
+                for data in program_data:
+                    inserts.append(BudgetPlanningData(
+                        user_id = user.user_id,
+                        label = data.label,
+                        year = year,
+                        term = term,
+                        income = data.income,
+                        amount = 0,
+                        created = datetime.today(),
+                        modified = datetime.today(),
+                    ))
+            else:
+                for data in program_data:
+                    inserts.append(BudgetPlanningData(
+                        user_id = user.user_id,
+                        label = data.label,
+                        year = year,
+                        term = term,
+                        income = data.income,
+                        amount = data.amount,
+                        created = datetime.today(),
+                        modified = datetime.today(),
+                    ))
             cnt += 1
     BudgetPlanningData.objects.bulk_create(inserts)
 
