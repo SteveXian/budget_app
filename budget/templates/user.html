@@ -7,6 +7,7 @@
 {% block content %}
 
 <br/>
+
 <div class="container">
 <div class="row">
 <!--div class="span3 bordered">
@@ -32,17 +33,14 @@
         </tr>
         <tr>
             <td></td>
-            {% for year in budget_user.remaining_years %}
-            <td>Fall</td>
-            <td>Winter</td>
-            <td>Spring</td>
+            {% for term in budget_user.remaining_terms %}
+                <td>{{term}}</td>
             {% endfor %}
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><b>Inflows</b></td>
-            <td colspan="{{budget_user.remaining_terms}}"></td>
         </tr>
         {% for row in data.income %}
         <tr>
@@ -62,11 +60,11 @@
         </tr>
         <tr>
             <td></td>
-            <td colspan="{{budget_user.remaining_terms}}"></td>
+            
         </tr>
         <tr>
             <td><b>Outflows</b></td>
-            <td colspan="{{budget_user.remaining_terms}}"></td>
+            
         </tr>
         {% for row in data.expense %}
         <tr>

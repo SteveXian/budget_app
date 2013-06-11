@@ -82,7 +82,11 @@ def user(request):
 
     data = format_data_for_view(budget_user, data_set)
     budget_user.remaining_years = range(budget_user.current_year, budget_user.program_length + 1)
-    budget_user.remaining_terms = (budget_user.program_length - budget_user.current_year + 1) * 3
+    budget_user.remaining_terms = []
+    for i in range(0, budget_user.program_length + 1 - budget_user.current_year):
+        budget_user.remaining_terms.append("Fall(" + budget_user.sequence[(i*3)+0] +")")
+        budget_user.remaining_terms.append("Winter(" + budget_user.sequence[(i*3)+1] +")")
+        budget_user.remaining_terms.append("Spring(" + budget_user.sequence[(i*3)+2] +")")
     return render(request, 'user.html', {
         'budget_user':budget_user,
         'data':data,
