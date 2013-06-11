@@ -105,7 +105,7 @@ def planning_update(request):
                                             label = result.group('category'),
                                             year = result.group('year'),
                                             term = result.group('term'))
-    data.amount = Decimal(request.POST['value'])
+    data.amount = Decimal(request.POST['value'].replace(",", ""))
     data.save()
     return HttpResponse('%.2f' % data.amount)
 
@@ -132,7 +132,7 @@ def tracking_add(request):
     data.description = str(request.POST['description'])
     data.year = int(budget_user.current_year)
     data.term = int(budget_user.current_term)
-    data.amount= Decimal(request.POST['amount'])
+    data.amount= Decimal(request.POST['amount'].replace(",", ""))
     data.save()
     return redirect('/tracking/')
 

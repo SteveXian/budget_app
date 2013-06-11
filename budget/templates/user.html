@@ -161,6 +161,7 @@ function calc_totals(){
 $(document).ready(function() {
 
     $('.edit').editable('/planning/update/', {
+        onblur : 'submit',
         callback : function(value, settings) {
             calc_totals();
         }

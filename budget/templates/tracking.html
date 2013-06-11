@@ -83,7 +83,7 @@
 <div class="span8">
 
     <div style="padding-bottom:30px;">
-        <form class="form-horizontal" action='/tracking/add/' method="POST">
+        <form id="tracking_add" class="form-horizontal" action='/tracking/add/' method="POST">
             <div class="span2 input-large" style="margin-left:0px;">  
                 <select id="category" name="category" class="span2">
                     <option value="" selected="selected">Choose Category</option>
@@ -133,5 +133,20 @@
 </div>
 </div>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tracking_add').submit(function() {
+        var amount = parseFloat($('#amount').val().replace(",", ""));
+        if(!amount){
+            $('#amount').val(0);
+        } else if (amount > 1000000) {
+            alert("The amount is too large");
+            return false;
+        }
+        return true;
+    });
+});
+</script>
 
 {% endblock %}
