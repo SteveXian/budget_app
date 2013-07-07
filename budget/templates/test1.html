@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block title %} Test {% endblock %}
+
+{% block planning %}active{% endblock %}
+
+{% block content %}
+<div class="container" style="">
+<form class="form-horizontal" action='/user/update/' method="POST">  
+<div id="tabs" >
+    <ul class="nav nav-tabs" >
+        <li><a id="ui_welcome" href="#tabs-1">Welcome</a></li>
+        <li><a id="ui_program" href="#tabs-2">Program Information</a></li>
+        <li><a id="ui_sequence" href="#tabs-3">Work/Study Sequence</a></li>
+    </ul>
+    <div id="tabs-1">
+        <p> Hi there! <br/>
+            Welcome to the Waterloo Banking Project Budgeting App. <br/>
+            Can I have your name? <br/><br/>
+            <div class="control-group">
+                <label class="control-label" for="first_name">First Name</label>
+                <div class="controls">
+                    <input type="text" id="first_name" name="first_name" placeholder="" class="input-xlarge" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label"  for="last_name">Last Name</label>
+                <div class="controls">
+                    <input type="text" id="last_name" name="last_name" placeholder="" class="input-xlarge" value="">
+                </div>
+            </div>
+            <br/>
+            <a class="btn btn-success" onclick="program();">Next</a>
+        </p>
+    </div>
+    <div id="tabs-2">
+        <p> Hi There <span id="ui_name"></span>!<br/>
+            At Waterloo Banking Project, we're trying to ... <br/>
+            Please tell us a bit more about your program: <br/>
+        </p>
+        <div class="control-group">
+            <label class="control-label" for="program">Program</label>
+            <div class="controls">
+                <input type="text" id="program" name="program" placeholder="Program Name" class="input-xlarge">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label"  for="program_length">Program Length</label>
+            <div class="controls">
+                <select id="program_length" name="program_length">
+                    <option value="3">3 Year</option>
+                    <option value="4">4 Year</option>
+                    <option value="5">5 Year</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label"  for="current_year">Current Year</label>
+            <div class="controls">
+                <select id="current_year" name="current_year">
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                    <option value="5">Fifth Year</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label"  for="current_term">Current Term</label>
+            <div class="controls">
+                <select id="current_term" name="current_term">
+                    <option value="1">Fall</option>
+                    <option value="2">Winter</option>
+                    <option value="3">Spring</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="coop">Coop</label>
+            <div class="controls">
+                <select id="coop" name="coop" >
+                    <option value="True">Yes</option>
+                    <option value="False">No</option>
+                </select>
+            </div>
+        </div>
+
+        <a class="btn btn-success" onclick="welcome();">Back</a>
+        <a class="btn btn-success" onclick="sequence();">Next</a>
+    </div>
+    <div id="tabs-3">
+        <p> Lastly, let's get your sequence.  <br/>
+            This is the order of study/work/off terms for your the rest of your program <br/>
+        </p>
+        <div id="sequence">
+        </div>
+        <a class="btn btn-success" onclick="program();">Back</a>
+        <button class="btn btn-success">Finish!</button>
+    </div>
+</div>
+</form>
+</div>
+
+<script type="text/javascript">
+    function welcome() {
+        $('#ui_welcome').click();
+        return false;
+    }
+
+    function program() {
+        var first = $('#first_name').val();
+        var last = $('#last_name').val();
+        $('#ui_name').html(first);
+        $('#ui_program').click();
+        return false;
+    }
+
+    function sequence() {
+        append_sequence_selects();
+        $('#ui_sequence').click();
+        return false;
+    }
+
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+    $("#talk").keypress(function(e){
+        /*
+        if(e.which >= 32 && e.which <=126) {
+            alert(e.which);
+            alert(String.fromCharCode(e.which));
+            return false;
+        }
+        return true;
+        */
+    })
+</script>
+
+
+{% endblock %}

@@ -48,6 +48,8 @@ def user_edit(request):
 def user_update(request):
     user_id = request.user.id
 
+    print request.POST
+
     if BudgetUser.objects.filter(user_id=user_id).count() != 0:
         user = BudgetUser.objects.get(user_id = user_id)
     else:

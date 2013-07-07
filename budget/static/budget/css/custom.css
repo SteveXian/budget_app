@@ -18,3 +18,22 @@ table.fixed td { overflow: hidden; }
 .green {
     color:green;
 }
+
+.green-well {
+    background-color: #1abc9c;
+    color:white;
+    text-align: center;
+}
+
+.spaced-out{
+    margin-bottom:30px;
+}
+
+body {
+    font-family: "Lato",​sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
