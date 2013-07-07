@@ -29,6 +29,12 @@ table.fixed td { overflow: hidden; }
     margin-bottom:30px;
 }
 
+.intro {
+    font-size:20px;
+    text-align: center;
+    font-weight: 500;
+}
+
 body {
     font-family: "Lato",​sans-serif;
 }
@@ -36,4 +42,8 @@ body {
 a {
     text-decoration: none;
 }
+
+#floater    {float:left; height:50%; margin-bottom:-20px;}
+#content    {clear:both; height:240px; position:relative;}
+
 

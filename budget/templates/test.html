@@ -6,53 +6,68 @@
 
 {% block content %}
 <div class="container">
-<div class="well green-well" >
+<div class="well green-well intro" >
     Welcome!</br>
     This website will help you figure out your financial goals...
 </div>    
-<form class="form-horizontal" action='/user/update/' method="POST">  
+<form class="form-horizontal" action='' method="POST">  
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>When Did You Start University?</h4>
             <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
         </div>
         <div class="span6">
-            <select id="program_length" name="program_length">
-                <option value="3">3 Year</option>
-                <option value="4">4 Year</option>
-                <option value="5">5 Year</option>
+            <br/><br/>
+            <select id="starting_year" name="starting_year">
+                <option value="2013">2008</option>
+                <option value="2013">2009</option>
+                <option value="2013">2010</option>
+                <option value="2013">2011</option>
+                <option value="2013">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
             </select>
         </div>
     </div>
     <div class="row spaced-out">
-        <div class="offset2 span4">When Do You Graduate?</div>
+        <div class="offset2 span4">
+            <h4>When Do You Graduate?</h4>
+            <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
+        </div>
         <div class="span6">
-            <select id="program_length" name="program_length">
-                <option value="3">3 Year</option>
-                <option value="4">4 Year</option>
-                <option value="5">5 Year</option>
+            <br/><br/>
+            <select id="ending_year" name="ending_year">
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2014">2015</option>
+                <option value="2014">2016</option>
+                <option value="2014">2017</option>
+                <option value="2014">2018</option>
             </select>
         </div>
     </div>
     <div class="row spaced-out">
-        <div class="offset2 span4">How Much Do You Have Saved Up?</div>
+        <div class="offset2 span4">
+            <h4>How Much Do You Have Saved Up?</h4>
+            <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
+        </div>
         <div class="span6">
-            <select id="program_length" name="program_length">
-                <option value="3">3 Year</option>
-                <option value="4">4 Year</option>
-                <option value="5">5 Year</option>
-            </select>
+            <br/><br/>
+            <input id="saved_amount" name="saved_amount" type="text" placeholder="$Amount Saved"></input>
         </div>
     </div>
     <div class="row spaced-out">
-        <div class="offset2 span4">How Much Debt Do You Have?</div>
-        <div class="span6">
-            <select id="program_length" name="program_length">
-                <option value="3">3 Year</option>
-                <option value="4">4 Year</option>
-                <option value="5">5 Year</option>
-            </select>
+        <div class="offset2 span4">
+            <h4>How Much Debt Do You Have?</h4>
+            <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
         </div>
+        <div class="span6"><br/><br/>
+            <input id="owned_amount" name="owned_amount" type="text" placeholder="$Amount Owned"></input>
+        </div>
+    </div>
+
+    <div class="row spaced-out" style="text-align:center;">
+        <div class="offset2 span7"><button class="btn btn-large btn-block btn-primary">Next!</button>
     </div>
 </form>
 </div>
