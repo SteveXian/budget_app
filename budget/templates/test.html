@@ -5,19 +5,19 @@
 {% block planning %}active{% endblock %}
 
 {% block content %}
-<div class="container">
-<div class="well green-well intro" >
+
+<div class="well green-well intro" style="width:100%;">
     Welcome!</br>
     This website will help you figure out your financial goals...
-</div>    
+</div>  
+<div class="container">  
 <form class="form-horizontal" action='' method="POST">  
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>When Did You Start University?</h4>
-            <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
+            Explanation Text such as when school starts eg. 2011
         </div>
         <div class="span6">
-            <br/><br/>
             <select id="starting_year" name="starting_year">
                 <option value="2013">2008</option>
                 <option value="2013">2009</option>
@@ -32,10 +32,9 @@
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>When Do You Graduate?</h4>
-            <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
+            Explanation Text such as when school starts eg. 2011
         </div>
         <div class="span6">
-            <br/><br/>
             <select id="ending_year" name="ending_year">
                 <option value="2013">2013</option>
                 <option value="2014">2014</option>
@@ -49,20 +48,19 @@
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>How Much Do You Have Saved Up?</h4>
-            <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
+            Explanation Text such as when school starts eg. 2011
         </div>
         <div class="span6">
-            <br/><br/>
-            <input id="saved_amount" name="saved_amount" type="text" placeholder="$Amount Saved"></input>
+            <input id="saved_amount" name="saved_amount" type="text" placeholder="Amount Saved"></input>
         </div>
     </div>
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>How Much Debt Do You Have?</h4>
-            <div class="well green-well" >Explanation Text such as when school starts eg. 2011</div>
+            Explanation Text such as when school starts eg. 2011
         </div>
-        <div class="span6"><br/><br/>
-            <input id="owned_amount" name="owned_amount" type="text" placeholder="$Amount Owned"></input>
+        <div class="span6">
+            <input id="owned_amount" name="owned_amount" type="text" placeholder="Amount Owned"></input>
         </div>
     </div>
 
