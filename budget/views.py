@@ -71,7 +71,7 @@ def user_update(request):
     user.end_year = int(request.POST['end_year'])
     user.tuition = Decimal(sanitize_decimal(request.POST['tuition']))
     user.saved = Decimal(sanitize_decimal(request.POST['saved']))
-    user.part_time = Decimal(sanitize_decimal(request.POST['part_time']))
+    user.part_time = 0
     user.program_length = user.end_year - user.start_year
     user.current_year = datetime.now().year - user.start_year
     user.coop = request.POST['coop']
