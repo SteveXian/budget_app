@@ -1,0 +1,1001 @@
+2013-07-08T19:42:17.462983+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.452613+00:00 app[web.1]: 
+2013-07-08T19:42:17.462983+00:00 app[web.1]: 
+2013-07-08T19:42:17.464587+00:00 app[web.1]: 
+2013-07-08T19:42:17.467738+00:00 app[web.1]: 
+2013-07-08T19:42:17.464587+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.359729) while time zone support is active.
+2013-07-08T19:42:17.465073+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.359737) while time zone support is active.
+2013-07-08T19:42:17.467738+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.462983+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.358652) while time zone support is active.
+2013-07-08T19:42:17.465073+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.417467+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.333758) while time zone support is active.
+2013-07-08T19:42:17.417467+00:00 app[web.1]: 
+2013-07-08T19:42:17.427206+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.355847) while time zone support is active.
+2013-07-08T19:42:17.416842+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.333750) while time zone support is active.
+2013-07-08T19:42:17.438240+00:00 app[web.1]: 
+2013-07-08T19:42:17.433476+00:00 app[web.1]: 
+2013-07-08T19:42:17.429255+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.465073+00:00 app[web.1]: 
+2013-07-08T19:42:17.467738+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.359911) while time zone support is active.
+2013-07-08T19:42:17.468083+00:00 app[web.1]: 
+2013-07-08T19:42:17.468579+00:00 app[web.1]: 
+2013-07-08T19:42:17.468083+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.359918) while time zone support is active.
+2013-07-08T19:42:17.468579+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.429255+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.355873) while time zone support is active.
+2013-07-08T19:42:17.437331+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.356332) while time zone support is active.
+2013-07-08T19:42:17.433476+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.437331+00:00 app[web.1]: 
+2013-07-08T19:42:17.468083+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.468579+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.360116) while time zone support is active.
+2013-07-08T19:42:17.451699+00:00 app[web.1]: 
+2013-07-08T19:42:17.464587+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.438240+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.357978) while time zone support is active.
+2013-07-08T19:42:17.452613+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.358645) while time zone support is active.
+2013-07-08T19:42:17.471045+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:17.471045+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:17.360123) while time zone support is active.
+2013-07-08T19:42:17.471045+00:00 app[web.1]: 
+2013-07-08T19:42:17.751958+00:00 app[web.1]: 23
+2013-07-08T19:42:18.960130+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.11" dyno=web.1 connect=13ms service=32ms status=404 bytes=1766
+2013-07-08T19:41:45.095113+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.11" dyno=web.1 connect=3ms service=31ms status=404 bytes=3878
+2013-07-08T19:42:18.245341+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.11" dyno=web.1 connect=4ms service=633ms status=200 bytes=9445
+2013-07-08T19:42:19.146544+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.11" dyno=web.1 connect=2ms service=35ms status=404 bytes=3878
+2013-07-08T19:42:59.703706+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:42:59.703706+00:00 app[web.1]: 
+2013-07-08T19:42:59.703706+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:42:59.696389) while time zone support is active.
+2013-07-08T19:42:59.683921+00:00 heroku[router]: at=info method=POST path=/planning/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.11" dyno=web.1 connect=2ms service=122ms status=200 bytes=14
+2013-07-08T19:43:00.410626+00:00 heroku[router]: at=info method=POST path=/planning/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.11" dyno=web.1 connect=2ms service=114ms status=200 bytes=14
+2013-07-08T19:43:00.424115+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:43:00.417938) while time zone support is active.
+2013-07-08T19:43:00.424115+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:43:00.424115+00:00 app[web.1]: 
+2013-07-08T19:48:03.460698+00:00 heroku[router]: at=info method=GET path=/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=6ms service=94ms status=302 bytes=5
+2013-07-08T19:48:03.630927+00:00 app[web.1]: 22
+2013-07-08T19:48:03.704070+00:00 app[web.1]: Internal Server Error: /planning/
+2013-07-08T19:48:03.704280+00:00 app[web.1]:     (self.model._meta.object_name, kwargs))
+2013-07-08T19:48:03.704070+00:00 app[web.1]: Traceback (most recent call last):
+2013-07-08T19:48:03.704280+00:00 app[web.1]: DoesNotExist: BudgetPlanningData matching query does not exist. Lookup parameters were {'term': 'F'}
+2013-07-08T19:48:03.704070+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+2013-07-08T19:48:03.704070+00:00 app[web.1]:   File "/app/budget/views.py", line 95, in user
+2013-07-08T19:48:03.704070+00:00 app[web.1]:     data = set_year.get(term=term)
+2013-07-08T19:48:03.704070+00:00 app[web.1]:     response = callback(request, *callback_args, **callback_kwargs)
+2013-07-08T19:48:03.704070+00:00 app[web.1]:     data = format_data_for_view(budget_user, data_set)
+2013-07-08T19:48:03.704070+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapped_view
+2013-07-08T19:48:03.704280+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/db/models/query.py", line 389, in get
+2013-07-08T19:48:03.704070+00:00 app[web.1]:     return view_func(request, *args, **kwargs)
+2013-07-08T19:48:03.704070+00:00 app[web.1]:   File "/app/budget/aux.py", line 85, in format_data_for_view
+2013-07-08T19:48:03.955314+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=459ms status=500 bytes=69904
+2013-07-08T19:48:07.231465+00:00 heroku[router]: at=info method=GET path=/admin host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=4ms status=301 bytes=5
+2013-07-08T19:48:07.397604+00:00 heroku[router]: at=info method=GET path=/admin/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=154ms status=200 bytes=1877
+2013-07-08T19:48:07.446551+00:00 heroku[router]: at=info method=GET path=/static/admin/css/login.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=13ms status=200 bytes=836
+2013-07-08T19:48:07.572824+00:00 heroku[router]: at=info method=GET path=/static/admin/img/nav-bg.gif host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=14ms status=200 bytes=273
+2013-07-08T19:48:08.481903+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=10ms service=29ms status=404 bytes=3878
+2013-07-08T19:48:07.529606+00:00 heroku[router]: at=info method=GET path=/static/admin/css/base.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=82ms status=200 bytes=14114
+2013-07-08T19:48:29.406275+00:00 heroku[router]: at=info method=POST path=/admin/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=327ms status=302 bytes=5
+2013-07-08T19:48:29.605178+00:00 heroku[router]: at=info method=GET path=/admin/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=164ms status=200 bytes=6893
+2013-07-08T19:48:29.735405+00:00 heroku[router]: at=info method=GET path=/static/admin/css/dashboard.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=5ms status=200 bytes=444
+2013-07-08T19:48:29.881133+00:00 heroku[router]: at=info method=GET path=/static/admin/img/icon_addlink.gif host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=4ms status=200 bytes=119
+2013-07-08T19:48:29.935726+00:00 heroku[router]: at=info method=GET path=/static/admin/img/icon_changelink.gif host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=7ms status=200 bytes=119
+2013-07-08T19:48:30.074911+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=22ms status=404 bytes=3878
+2013-07-08T19:48:29.889343+00:00 heroku[router]: at=info method=GET path=/static/admin/img/default-bg.gif host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=5ms service=8ms status=200 bytes=844
+2013-07-08T19:48:41.831373+00:00 heroku[router]: at=info method=GET path=/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=74ms status=302 bytes=5
+2013-07-08T19:48:41.970159+00:00 app[web.1]: 1
+2013-07-08T19:48:42.080283+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=215ms status=200 bytes=9452
+2013-07-08T19:48:42.164360+00:00 heroku[router]: at=info method=GET path=/static/budget/css/bootstrap.min.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=8ms service=12ms status=200 bytes=105939
+2013-07-08T19:48:42.339525+00:00 heroku[router]: at=info method=GET path=/static/budget/css/custom.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=169ms status=200 bytes=1020
+2013-07-08T19:48:42.357156+00:00 heroku[router]: at=info method=GET path=/static/budget/js/jquery.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=158ms status=200 bytes=92629
+2013-07-08T19:48:42.312598+00:00 heroku[router]: at=info method=GET path=/static/budget/css/flat-ui.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=171ms status=200 bytes=87768
+2013-07-08T19:48:42.342425+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=172ms status=200 bytes=28538
+2013-07-08T19:48:42.344868+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=61ms status=404 bytes=1766
+2013-07-08T19:48:42.396096+00:00 heroku[router]: at=info method=GET path=/static/budget/js/custom.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=6ms status=200 bytes=2273
+2013-07-08T19:48:43.108796+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=12ms status=404 bytes=3878
+2013-07-08T19:48:42.324409+00:00 heroku[router]: at=info method=GET path=/static/budget/css/bootstrap-responsive.min.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=175ms status=200 bytes=16849
+2013-07-08T19:48:42.393282+00:00 heroku[router]: at=info method=GET path=/static/budget/js/jquery.jeditable.mini.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=7ms status=200 bytes=8067
+2013-07-08T19:48:53.106545+00:00 heroku[router]: at=info method=GET path=/logout/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=3ms service=135ms status=302 bytes=5
+2013-07-08T19:48:53.259034+00:00 heroku[router]: at=info method=GET path=/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=10ms service=91ms status=302 bytes=5
+2013-07-08T19:48:53.398728+00:00 heroku[router]: at=info method=GET path=/login/?next=/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=103ms status=200 bytes=4472
+2013-07-08T19:48:53.527854+00:00 heroku[router]: at=info method=GET path=/static/budget/img/uplan_home.png host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=7ms service=9ms status=200 bytes=18892
+2013-07-08T19:48:53.626865+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=17ms status=404 bytes=3878
+2013-07-08T19:49:03.404095+00:00 heroku[router]: at=info method=POST path=/login_auth/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=484ms status=302 bytes=5
+2013-07-08T19:49:03.679547+00:00 app[web.1]: 22
+2013-07-08T19:49:03.545560+00:00 heroku[router]: at=info method=GET path=/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=101ms status=302 bytes=5
+2013-07-08T19:49:03.742304+00:00 app[web.1]:     data = format_data_for_view(budget_user, data_set)
+2013-07-08T19:49:03.742304+00:00 app[web.1]: Internal Server Error: /planning/
+2013-07-08T19:49:03.742304+00:00 app[web.1]: Traceback (most recent call last):
+2013-07-08T19:49:03.742664+00:00 app[web.1]:     (self.model._meta.object_name, kwargs))
+2013-07-08T19:49:03.742304+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+2013-07-08T19:49:03.742304+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapped_view
+2013-07-08T19:49:03.742304+00:00 app[web.1]:     return view_func(request, *args, **kwargs)
+2013-07-08T19:49:03.742304+00:00 app[web.1]:   File "/app/budget/aux.py", line 85, in format_data_for_view
+2013-07-08T19:49:03.742664+00:00 app[web.1]: DoesNotExist: BudgetPlanningData matching query does not exist. Lookup parameters were {'term': 'F'}
+2013-07-08T19:49:03.742304+00:00 app[web.1]:   File "/app/budget/views.py", line 95, in user
+2013-07-08T19:49:03.742664+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/db/models/query.py", line 389, in get
+2013-07-08T19:49:03.742304+00:00 app[web.1]:     response = callback(request, *callback_args, **callback_kwargs)
+2013-07-08T19:49:03.742304+00:00 app[web.1]:     data = set_year.get(term=term)
+2013-07-08T19:49:03.929569+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=322ms status=500 bytes=71168
+2013-07-08T19:49:04.361622+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=10ms status=404 bytes=3878
+2013-07-08T19:49:09.628357+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=13ms status=404 bytes=1766
+2013-07-08T19:49:09.770213+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=18ms status=404 bytes=3878
+2013-07-08T19:49:09.396593+00:00 heroku[router]: at=info method=GET path=/intro host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=18ms status=301 bytes=5
+2013-07-08T19:49:09.540823+00:00 heroku[router]: at=info method=GET path=/intro/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=117ms status=200 bytes=8630
+2013-07-08T19:48:04.228162+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=14ms status=404 bytes=3878
+2013-07-08T19:49:34.192971+00:00 app[web.1]: <QueryDict: {u'sequence': [u'SSWSSWSSWSSWSSWSSW'], u'saved': [u'1000'], u'tuition': [u'700'], u'start_year': [u'2009'], u'end_year': [u'2015'], u'coop': [u'True']}>
+2013-07-08T19:49:34.207494+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.198618) while time zone support is active.
+2013-07-08T19:49:34.207494+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.207494+00:00 app[web.1]: 
+2013-07-08T19:49:34.559716+00:00 app[web.1]: Scholarship
+2013-07-08T19:49:34.587001+00:00 app[web.1]: School
+2013-07-08T19:49:34.638300+00:00 heroku[router]: at=info method=POST path=/user/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=571ms status=302 bytes=5
+2013-07-08T19:49:34.564212+00:00 app[web.1]: Food
+2013-07-08T19:49:34.579485+00:00 app[web.1]: Food
+2013-07-08T19:49:34.579624+00:00 app[web.1]: Part Time
+2013-07-08T19:49:34.614472+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552811) while time zone support is active.
+2013-07-08T19:49:34.614472+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.587105+00:00 app[web.1]: Transportation
+2013-07-08T19:49:34.614889+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552992) while time zone support is active.
+2013-07-08T19:49:34.614889+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.550113+00:00 app[web.1]: School
+2013-07-08T19:49:34.552076+00:00 app[web.1]: Housing
+2013-07-08T19:49:34.587198+00:00 app[web.1]: Housing
+2013-07-08T19:49:34.587294+00:00 app[web.1]: Other
+2013-07-08T19:49:34.587392+00:00 app[web.1]: Food
+2013-07-08T19:49:34.587485+00:00 app[web.1]: Part Time
+2013-07-08T19:49:34.614889+00:00 app[web.1]: 
+2013-07-08T19:49:34.615175+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.553000) while time zone support is active.
+2013-07-08T19:49:34.612027+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552142) while time zone support is active.
+2013-07-08T19:49:34.612027+00:00 app[web.1]: 
+2013-07-08T19:49:34.587585+00:00 app[web.1]: Scholarship
+2013-07-08T19:49:34.587680+00:00 app[web.1]: Full Time
+2013-07-08T19:49:34.610634+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.551764) while time zone support is active.
+2013-07-08T19:49:34.559203+00:00 app[web.1]: Food
+2013-07-08T19:49:34.610634+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.552734+00:00 app[web.1]: Part Time
+2013-07-08T19:49:34.552923+00:00 app[web.1]: Full Time
+2013-07-08T19:49:34.556804+00:00 app[web.1]: School
+2013-07-08T19:49:34.551903+00:00 app[web.1]: Transportation
+2013-07-08T19:49:34.613070+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552351) while time zone support is active.
+2013-07-08T19:49:34.613470+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.612758+00:00 app[web.1]: 
+2013-07-08T19:49:34.553104+00:00 app[web.1]: Scholarship
+2013-07-08T19:49:34.559542+00:00 app[web.1]: Full Time
+2013-07-08T19:49:34.552495+00:00 app[web.1]: Food
+2013-07-08T19:49:34.562897+00:00 app[web.1]: School
+2013-07-08T19:49:34.564593+00:00 app[web.1]: Scholarship
+2013-07-08T19:49:34.571459+00:00 app[web.1]: Housing
+2013-07-08T19:49:34.572312+00:00 app[web.1]: Part Time
+2013-07-08T19:49:34.557066+00:00 app[web.1]: Transportation
+2013-07-08T19:49:34.552242+00:00 app[web.1]: Other
+2013-07-08T19:49:34.615587+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.559367+00:00 app[web.1]: Part Time
+2013-07-08T19:49:34.563111+00:00 app[web.1]: Transportation
+2013-07-08T19:49:34.564831+00:00 app[web.1]: Full Time
+2013-07-08T19:49:34.563344+00:00 app[web.1]: Housing
+2013-07-08T19:49:34.559029+00:00 app[web.1]: Other
+2013-07-08T19:49:34.614171+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552805) while time zone support is active.
+2013-07-08T19:49:34.571930+00:00 app[web.1]: Other
+2013-07-08T19:49:34.573060+00:00 app[web.1]: Scholarship
+2013-07-08T19:49:34.564418+00:00 app[web.1]: Part Time
+2013-07-08T19:49:34.571290+00:00 app[web.1]: Transportation
+2013-07-08T19:49:34.578989+00:00 app[web.1]: School
+2013-07-08T19:49:34.610845+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.611571+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.551982) while time zone support is active.
+2013-07-08T19:49:34.579987+00:00 app[web.1]: Scholarship
+2013-07-08T19:49:34.572143+00:00 app[web.1]: Food
+2013-07-08T19:49:34.618277+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.558931) while time zone support is active.
+2013-07-08T19:49:34.616321+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.556950) while time zone support is active.
+2013-07-08T19:49:34.579327+00:00 app[web.1]: Other
+2013-07-08T19:49:34.579808+00:00 app[web.1]: Full Time
+2013-07-08T19:49:34.558786+00:00 app[web.1]: Housing
+2013-07-08T19:49:34.612357+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.579230+00:00 app[web.1]: Housing
+2013-07-08T19:49:34.618729+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559095) while time zone support is active.
+2013-07-08T19:49:34.610634+00:00 app[web.1]: 
+2013-07-08T19:49:34.564043+00:00 app[web.1]: Other
+2013-07-08T19:49:34.610845+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.551781) while time zone support is active.
+2013-07-08T19:49:34.611255+00:00 app[web.1]: 
+2013-07-08T19:49:34.611255+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.551976) while time zone support is active.
+2013-07-08T19:49:34.611571+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.617026+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.557133) while time zone support is active.
+2013-07-08T19:49:34.619114+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559101) while time zone support is active.
+2013-07-08T19:49:34.612357+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552149) while time zone support is active.
+2013-07-08T19:49:34.611255+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.613772+00:00 app[web.1]: 
+2013-07-08T19:49:34.612357+00:00 app[web.1]: 
+2013-07-08T19:49:34.613070+00:00 app[web.1]: 
+2013-07-08T19:49:34.612027+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.619700+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559268) while time zone support is active.
+2013-07-08T19:49:34.619700+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.612758+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552345) while time zone support is active.
+2013-07-08T19:49:34.571016+00:00 app[web.1]: School
+2013-07-08T19:49:34.572882+00:00 app[web.1]: Full Time
+2013-07-08T19:49:34.615175+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.613772+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552586) while time zone support is active.
+2013-07-08T19:49:34.613470+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.552578) while time zone support is active.
+2013-07-08T19:49:34.617344+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.557139) while time zone support is active.
+2013-07-08T19:49:34.619700+00:00 app[web.1]: 
+2013-07-08T19:49:34.614171+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.579125+00:00 app[web.1]: Transportation
+2013-07-08T19:49:34.610845+00:00 app[web.1]: 
+2013-07-08T19:49:34.620721+00:00 app[web.1]: 
+2013-07-08T19:49:34.621424+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.613470+00:00 app[web.1]: 
+2013-07-08T19:49:34.614171+00:00 app[web.1]: 
+2013-07-08T19:49:34.611571+00:00 app[web.1]: 
+2013-07-08T19:49:34.615587+00:00 app[web.1]: 
+2013-07-08T19:49:34.620721+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.614472+00:00 app[web.1]: 
+2013-07-08T19:49:34.615175+00:00 app[web.1]: 
+2013-07-08T19:49:34.612758+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.616608+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.556958) while time zone support is active.
+2013-07-08T19:49:34.615876+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.553234) while time zone support is active.
+2013-07-08T19:49:34.615587+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.553170) while time zone support is active.
+2013-07-08T19:49:34.615876+00:00 app[web.1]: 
+2013-07-08T19:49:34.617026+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.613772+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.617860+00:00 app[web.1]: 
+2013-07-08T19:49:34.616321+00:00 app[web.1]: 
+2013-07-08T19:49:34.621028+00:00 app[web.1]: 
+2013-07-08T19:49:34.619114+00:00 app[web.1]: 
+2013-07-08T19:49:34.616608+00:00 app[web.1]: 
+2013-07-08T19:49:34.617026+00:00 app[web.1]: 
+2013-07-08T19:49:34.617344+00:00 app[web.1]: 
+2013-07-08T19:49:34.618277+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.617344+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.615876+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.620127+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559275) while time zone support is active.
+2013-07-08T19:49:34.618729+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.617860+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.558923) while time zone support is active.
+2013-07-08T19:49:34.616608+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.619114+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.622171+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.618277+00:00 app[web.1]: 
+2013-07-08T19:49:34.621028+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559439) while time zone support is active.
+2013-07-08T19:49:34.620127+00:00 app[web.1]: 
+2013-07-08T19:49:34.617860+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.622171+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559805) while time zone support is active.
+2013-07-08T19:49:34.621028+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.620721+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559433) while time zone support is active.
+2013-07-08T19:49:34.621424+00:00 app[web.1]: 
+2013-07-08T19:49:34.618729+00:00 app[web.1]: 
+2013-07-08T19:49:34.622538+00:00 app[web.1]: 
+2013-07-08T19:49:34.623554+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.621424+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559607) while time zone support is active.
+2013-07-08T19:49:34.623189+00:00 app[web.1]: 
+2013-07-08T19:49:34.623189+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.621727+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559613) while time zone support is active.
+2013-07-08T19:49:34.622538+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.559811) while time zone support is active.
+2013-07-08T19:49:34.620127+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.624285+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.622171+00:00 app[web.1]: 
+2013-07-08T19:49:34.631210+00:00 app[web.1]: 
+2013-07-08T19:49:34.624703+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.622538+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.631519+00:00 app[web.1]: 
+2013-07-08T19:49:34.621727+00:00 app[web.1]: 
+2013-07-08T19:49:34.631939+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572024) while time zone support is active.
+2013-07-08T19:49:34.631939+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.631939+00:00 app[web.1]: 
+2013-07-08T19:49:34.623554+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.562995) while time zone support is active.
+2013-07-08T19:49:34.634260+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.623995+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.563191) while time zone support is active.
+2013-07-08T19:49:34.624989+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.563451) while time zone support is active.
+2013-07-08T19:49:34.633145+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572031) while time zone support is active.
+2013-07-08T19:49:34.633145+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.621727+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.625736+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564116) while time zone support is active.
+2013-07-08T19:49:34.625422+00:00 app[web.1]: 
+2013-07-08T19:49:34.624285+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.563198) while time zone support is active.
+2013-07-08T19:49:34.624285+00:00 app[web.1]: 
+2013-07-08T19:49:34.624703+00:00 app[web.1]: 
+2013-07-08T19:49:34.625422+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564110) while time zone support is active.
+2013-07-08T19:49:34.623554+00:00 app[web.1]: 
+2013-07-08T19:49:34.625422+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.613070+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.638463+00:00 app[web.1]: 
+2013-07-08T19:49:34.638751+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579331) while time zone support is active.
+2013-07-08T19:49:34.623995+00:00 app[web.1]: 
+2013-07-08T19:49:34.626153+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.626865+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564484) while time zone support is active.
+2013-07-08T19:49:34.638751+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.638751+00:00 app[web.1]: 
+2013-07-08T19:49:34.625736+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.624703+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.563444) while time zone support is active.
+2013-07-08T19:49:34.637036+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.637036+00:00 app[web.1]: 
+2013-07-08T19:49:34.624989+00:00 app[web.1]: 
+2013-07-08T19:49:34.636635+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579034) while time zone support is active.
+2013-07-08T19:49:34.639896+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579484) while time zone support is active.
+2013-07-08T19:49:34.639896+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.624989+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.627169+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564490) while time zone support is active.
+2013-07-08T19:49:34.627618+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564681) while time zone support is active.
+2013-07-08T19:49:34.637345+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579131) while time zone support is active.
+2013-07-08T19:49:34.637345+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.637345+00:00 app[web.1]: 
+2013-07-08T19:49:34.636635+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.636635+00:00 app[web.1]: 
+2013-07-08T19:49:34.637036+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579125) while time zone support is active.
+2013-07-08T19:49:34.639896+00:00 app[web.1]: 
+2013-07-08T19:49:34.640315+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579490) while time zone support is active.
+2013-07-08T19:49:34.640315+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.626466+00:00 app[web.1]: 
+2013-07-08T19:49:34.640816+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.640816+00:00 app[web.1]: 
+2013-07-08T19:49:34.627944+00:00 app[web.1]: 
+2013-07-08T19:49:34.637745+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579228) while time zone support is active.
+2013-07-08T19:49:34.637745+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.637745+00:00 app[web.1]: 
+2013-07-08T19:49:34.640315+00:00 app[web.1]: 
+2013-07-08T19:49:34.627618+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.628384+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564896) while time zone support is active.
+2013-07-08T19:49:34.641167+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579669) while time zone support is active.
+2013-07-08T19:49:34.641167+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.641167+00:00 app[web.1]: 
+2013-07-08T19:49:34.638045+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579234) while time zone support is active.
+2013-07-08T19:49:34.643043+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.586988) while time zone support is active.
+2013-07-08T19:49:34.643043+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.643043+00:00 app[web.1]: 
+2013-07-08T19:49:34.640816+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579662) while time zone support is active.
+2013-07-08T19:49:34.626153+00:00 app[web.1]: 
+2013-07-08T19:49:34.626466+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.628384+00:00 app[web.1]: 
+2013-07-08T19:49:34.641563+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579805) while time zone support is active.
+2013-07-08T19:49:34.641563+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.641563+00:00 app[web.1]: 
+2013-07-08T19:49:34.642279+00:00 app[web.1]: 
+2013-07-08T19:49:34.643440+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587000) while time zone support is active.
+2013-07-08T19:49:34.643440+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.643440+00:00 app[web.1]: 
+2013-07-08T19:49:34.642569+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.580041) while time zone support is active.
+2013-07-08T19:49:34.642569+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.642569+00:00 app[web.1]: 
+2013-07-08T19:49:34.643963+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587101) while time zone support is active.
+2013-07-08T19:49:34.628384+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.630290+00:00 app[web.1]: 
+2013-07-08T19:49:34.628702+00:00 app[web.1]: 
+2013-07-08T19:49:34.630755+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:35.397682+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=12ms status=404 bytes=3878
+2013-07-08T19:49:34.625736+00:00 app[web.1]: 
+2013-07-08T19:49:34.629103+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.650914+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.650914+00:00 app[web.1]: 
+2013-07-08T19:49:34.626466+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564284) while time zone support is active.
+2013-07-08T19:49:34.629103+00:00 app[web.1]: 
+2013-07-08T19:49:34.633551+00:00 app[web.1]: 
+2013-07-08T19:49:34.631210+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.571524) while time zone support is active.
+2013-07-08T19:49:34.651423+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587294) while time zone support is active.
+2013-07-08T19:49:34.651423+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.651423+00:00 app[web.1]: 
+2013-07-08T19:49:34.627944+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564687) while time zone support is active.
+2013-07-08T19:49:34.631210+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.631519+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.653479+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.653479+00:00 app[web.1]: 
+2013-07-08T19:49:34.633837+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.649902+00:00 app[web.1]: 
+2013-07-08T19:49:34.651714+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587299) while time zone support is active.
+2013-07-08T19:49:34.651714+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.628702+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.653762+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587585) while time zone support is active.
+2013-07-08T19:49:34.653762+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.653762+00:00 app[web.1]: 
+2013-07-08T19:49:34.634547+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572387) while time zone support is active.
+2013-07-08T19:49:34.650542+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587198) while time zone support is active.
+2013-07-08T19:49:34.650542+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.650542+00:00 app[web.1]: 
+2013-07-08T19:49:34.634260+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572381) while time zone support is active.
+2013-07-08T19:49:34.630755+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.571364) while time zone support is active.
+2013-07-08T19:49:34.654176+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587675) while time zone support is active.
+2013-07-08T19:49:34.627169+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.635930+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.629413+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.571188) while time zone support is active.
+2013-07-08T19:49:34.650914+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587204) while time zone support is active.
+2013-07-08T19:49:34.634260+00:00 app[web.1]: 
+2013-07-08T19:49:34.627618+00:00 app[web.1]: 
+2013-07-08T19:49:34.634547+00:00 app[web.1]: 
+2013-07-08T19:49:34.652798+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.636348+00:00 app[web.1]: 
+2013-07-08T19:49:34.633551+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572212) while time zone support is active.
+2013-07-08T19:49:34.635235+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.652798+00:00 app[web.1]: 
+2013-07-08T19:49:34.653108+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587491) while time zone support is active.
+2013-07-08T19:49:34.653108+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:35.034020+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapped_view
+2013-07-08T19:49:34.633837+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572219) while time zone support is active.
+2013-07-08T19:49:34.629413+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.643963+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.653108+00:00 app[web.1]: 
+2013-07-08T19:49:34.653479+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587580) while time zone support is active.
+2013-07-08T19:49:34.649902+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587107) while time zone support is active.
+2013-07-08T19:49:34.651714+00:00 app[web.1]: 
+2013-07-08T19:49:34.652115+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587390) while time zone support is active.
+2013-07-08T19:49:35.034020+00:00 app[web.1]:     return view_func(request, *args, **kwargs)
+2013-07-08T19:49:35.034020+00:00 app[web.1]:   File "/app/budget/views.py", line 95, in user
+2013-07-08T19:49:35.034020+00:00 app[web.1]:     data = format_data_for_view(budget_user, data_set)
+2013-07-08T19:49:34.634547+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.635930+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.573131) while time zone support is active.
+2013-07-08T19:49:34.636348+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.630290+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.571357) while time zone support is active.
+2013-07-08T19:49:34.638045+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.641864+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.654605+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587681) while time zone support is active.
+2013-07-08T19:49:34.654605+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.654605+00:00 app[web.1]: 
+2013-07-08T19:49:34.652798+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587485) while time zone support is active.
+2013-07-08T19:49:34.652115+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.652115+00:00 app[web.1]: 
+2013-07-08T19:49:34.652402+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.587396) while time zone support is active.
+2013-07-08T19:49:35.034020+00:00 app[web.1]:   File "/app/budget/aux.py", line 85, in format_data_for_view
+2013-07-08T19:49:35.034020+00:00 app[web.1]:     data = set_year.get(term=term)
+2013-07-08T19:49:34.635235+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572965) while time zone support is active.
+2013-07-08T19:49:34.643963+00:00 app[web.1]: 
+2013-07-08T19:49:34.947703+00:00 app[web.1]: 22
+2013-07-08T19:49:35.034020+00:00 app[web.1]: Internal Server Error: /planning/
+2013-07-08T19:49:35.034020+00:00 app[web.1]: Traceback (most recent call last):
+2013-07-08T19:49:34.652402+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.626865+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.652402+00:00 app[web.1]: 
+2013-07-08T19:49:34.633551+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:35.034020+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+2013-07-08T19:49:35.034020+00:00 app[web.1]:     response = callback(request, *callback_args, **callback_kwargs)
+2013-07-08T19:49:34.626865+00:00 app[web.1]: 
+2013-07-08T19:49:34.627169+00:00 app[web.1]: 
+2013-07-08T19:49:34.634945+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:35.034246+00:00 app[web.1]: DoesNotExist: BudgetPlanningData matching query does not exist. Lookup parameters were {'term': 'F'}
+2013-07-08T19:49:34.627944+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.628702+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564902) while time zone support is active.
+2013-07-08T19:49:34.641864+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579811) while time zone support is active.
+2013-07-08T19:49:34.649902+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.635630+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.573125) while time zone support is active.
+2013-07-08T19:49:34.634945+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.572958) while time zone support is active.
+2013-07-08T19:49:34.635235+00:00 app[web.1]: 
+2013-07-08T19:49:34.629413+00:00 app[web.1]: 
+2013-07-08T19:49:34.630290+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.638463+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.638045+00:00 app[web.1]: 
+2013-07-08T19:49:34.629103+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.571178) while time zone support is active.
+2013-07-08T19:49:34.642279+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.580034) while time zone support is active.
+2013-07-08T19:49:34.641864+00:00 app[web.1]: 
+2013-07-08T19:49:34.630755+00:00 app[web.1]: 
+2013-07-08T19:49:34.633145+00:00 app[web.1]: 
+2013-07-08T19:49:34.631519+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.571530) while time zone support is active.
+2013-07-08T19:49:34.633837+00:00 app[web.1]: 
+2013-07-08T19:49:34.634945+00:00 app[web.1]: 
+2013-07-08T19:49:34.635630+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.635930+00:00 app[web.1]: 
+2013-07-08T19:49:35.034246+00:00 app[web.1]:     (self.model._meta.object_name, kwargs))
+2013-07-08T19:49:34.654176+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.616321+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.638463+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579326) while time zone support is active.
+2013-07-08T19:49:35.034246+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/db/models/query.py", line 389, in get
+2013-07-08T19:49:34.635630+00:00 app[web.1]: 
+2013-07-08T19:49:34.654176+00:00 app[web.1]: 
+2013-07-08T19:49:34.623189+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.562987) while time zone support is active.
+2013-07-08T19:49:34.636348+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.579025) while time zone support is active.
+2013-07-08T19:49:34.642279+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.623995+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:49:34.626153+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:49:34.564277) while time zone support is active.
+2013-07-08T19:49:55.758134+00:00 heroku[router]: at=info method=GET path=/intro/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=3ms service=157ms status=200 bytes=8630
+2013-07-08T19:49:55.901993+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=82ms status=404 bytes=1766
+2013-07-08T19:49:56.059311+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=79ms status=404 bytes=3878
+2013-07-08T19:48:53.476771+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=8ms status=404 bytes=1766
+2013-07-08T19:50:15.166211+00:00 app[web.1]: <QueryDict: {u'sequence': [u'SSWSSWSSWSSWSSW'], u'saved': [u'1000'], u'tuition': [u'700'], u'start_year': [u'2010'], u'end_year': [u'2015'], u'coop': [u'True']}>
+2013-07-08T19:50:15.182606+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.174754) while time zone support is active.
+2013-07-08T19:50:15.182606+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.182606+00:00 app[web.1]: 
+2013-07-08T19:50:15.667016+00:00 app[web.1]: Food
+2013-07-08T19:50:15.667184+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.667352+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.667557+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.646666+00:00 app[web.1]: School
+2013-07-08T19:50:15.647068+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.647237+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.647403+00:00 app[web.1]: Other
+2013-07-08T19:50:15.647567+00:00 app[web.1]: Food
+2013-07-08T19:50:15.647732+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.647898+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.674131+00:00 app[web.1]: School
+2013-07-08T19:50:15.648062+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.656226+00:00 app[web.1]: School
+2013-07-08T19:50:15.657257+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.675349+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.675588+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.657432+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.657598+00:00 app[web.1]: Other
+2013-07-08T19:50:15.657766+00:00 app[web.1]: Food
+2013-07-08T19:50:15.747452+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.747452+00:00 app[web.1]: 
+2013-07-08T19:50:15.748065+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.658166) while time zone support is active.
+2013-07-08T19:50:15.675836+00:00 app[web.1]: Other
+2013-07-08T19:50:15.657933+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.658100+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.748065+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.676646+00:00 app[web.1]: Food
+2013-07-08T19:50:15.677041+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.677254+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.658323+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.663125+00:00 app[web.1]: School
+2013-07-08T19:50:15.665257+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.665702+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.748065+00:00 app[web.1]: 
+2013-07-08T19:50:15.677419+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.684794+00:00 app[web.1]: School
+2013-07-08T19:50:15.698894+00:00 app[web.1]: Other
+2013-07-08T19:50:15.699112+00:00 app[web.1]: Food
+2013-07-08T19:50:15.685066+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.685280+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.685639+00:00 app[web.1]: Other
+2013-07-08T19:50:15.685894+00:00 app[web.1]: Food
+2013-07-08T19:50:15.686062+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.810900+00:00 app[web.1]: 
+2013-07-08T19:50:15.748460+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.658172) while time zone support is active.
+2013-07-08T19:50:15.748460+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.748460+00:00 app[web.1]: 
+2013-07-08T19:50:15.846013+00:00 heroku[router]: at=info method=POST path=/user/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=3ms service=798ms status=302 bytes=5
+2013-07-08T19:50:15.686249+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.686416+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.748912+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.658396) while time zone support is active.
+2013-07-08T19:50:15.748912+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.748912+00:00 app[web.1]: 
+2013-07-08T19:50:15.690354+00:00 app[web.1]: School
+2013-07-08T19:50:15.690559+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.700720+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.700914+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.701082+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.704754+00:00 app[web.1]: School
+2013-07-08T19:50:15.690724+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.690887+00:00 app[web.1]: Other
+2013-07-08T19:50:15.749887+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.658403) while time zone support is active.
+2013-07-08T19:50:15.749887+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.749887+00:00 app[web.1]: 
+2013-07-08T19:50:15.691051+00:00 app[web.1]: Food
+2013-07-08T19:50:15.705119+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.705354+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.705886+00:00 app[web.1]: Other
+2013-07-08T19:50:15.754079+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.664701) while time zone support is active.
+2013-07-08T19:50:15.754079+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.691214+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.691417+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.691582+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.706153+00:00 app[web.1]: Food
+2013-07-08T19:50:15.706333+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.706502+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.706887+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.754079+00:00 app[web.1]: 
+2013-07-08T19:50:15.754462+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.664719) while time zone support is active.
+2013-07-08T19:50:15.766801+00:00 app[web.1]: 
+2013-07-08T19:50:15.719054+00:00 app[web.1]: Part Time
+2013-07-08T19:50:15.719541+00:00 app[web.1]: Scholarship
+2013-07-08T19:50:15.767155+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.675488) while time zone support is active.
+2013-07-08T19:50:15.719731+00:00 app[web.1]: Full Time
+2013-07-08T19:50:15.666585+00:00 app[web.1]: Other
+2013-07-08T19:50:15.716170+00:00 app[web.1]: School
+2013-07-08T19:50:15.716979+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.717342+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.767155+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.767155+00:00 app[web.1]: 
+2013-07-08T19:50:15.767942+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.675654) while time zone support is active.
+2013-07-08T19:50:15.724930+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.724930+00:00 app[web.1]: 
+2013-07-08T19:50:15.721292+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.646929) while time zone support is active.
+2013-07-08T19:50:15.717586+00:00 app[web.1]: Other
+2013-07-08T19:50:15.718834+00:00 app[web.1]: Food
+2013-07-08T19:50:15.767942+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.725481+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647142) while time zone support is active.
+2013-07-08T19:50:15.725481+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.725481+00:00 app[web.1]: 
+2013-07-08T19:50:15.721292+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.721292+00:00 app[web.1]: 
+2013-07-08T19:50:15.724380+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.646946) while time zone support is active.
+2013-07-08T19:50:15.767942+00:00 app[web.1]: 
+2013-07-08T19:50:15.768291+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.675740) while time zone support is active.
+2013-07-08T19:50:15.727553+00:00 app[web.1]: 
+2013-07-08T19:50:15.727901+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647310) while time zone support is active.
+2013-07-08T19:50:15.727901+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.768291+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.768291+00:00 app[web.1]: 
+2013-07-08T19:50:15.727901+00:00 app[web.1]: 
+2013-07-08T19:50:15.768755+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.675901) while time zone support is active.
+2013-07-08T19:50:15.768755+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.768755+00:00 app[web.1]: 
+2013-07-08T19:50:15.737001+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647963) while time zone support is active.
+2013-07-08T19:50:15.737001+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.737001+00:00 app[web.1]: 
+2013-07-08T19:50:15.769601+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.675908) while time zone support is active.
+2013-07-08T19:50:15.769601+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.769601+00:00 app[web.1]: 
+2013-07-08T19:50:15.727553+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647303) while time zone support is active.
+2013-07-08T19:50:15.737735+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647969) while time zone support is active.
+2013-07-08T19:50:15.737735+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.737735+00:00 app[web.1]: 
+2013-07-08T19:50:15.770132+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.676775) while time zone support is active.
+2013-07-08T19:50:15.770132+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.770132+00:00 app[web.1]: 
+2013-07-08T19:50:15.728514+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647468) while time zone support is active.
+2013-07-08T19:50:15.728514+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.728514+00:00 app[web.1]: 
+2013-07-08T19:50:15.738173+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.648127) while time zone support is active.
+2013-07-08T19:50:15.738173+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.738173+00:00 app[web.1]: 
+2013-07-08T19:50:15.728846+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647475) while time zone support is active.
+2013-07-08T19:50:15.728846+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.728846+00:00 app[web.1]: 
+2013-07-08T19:50:15.738485+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.648183) while time zone support is active.
+2013-07-08T19:50:15.740098+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657336) while time zone support is active.
+2013-07-08T19:50:15.773799+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.676783) while time zone support is active.
+2013-07-08T19:50:15.747036+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.739783+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.747452+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.658006) while time zone support is active.
+2013-07-08T19:50:15.740098+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.740098+00:00 app[web.1]: 
+2013-07-08T19:50:15.773799+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.773799+00:00 app[web.1]: 
+2013-07-08T19:50:15.755277+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.665410) while time zone support is active.
+2013-07-08T19:50:15.729832+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647633) while time zone support is active.
+2013-07-08T19:50:15.729832+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.729832+00:00 app[web.1]: 
+2013-07-08T19:50:15.743936+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657499) while time zone support is active.
+2013-07-08T19:50:15.743936+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.774257+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.677151) while time zone support is active.
+2013-07-08T19:50:15.774257+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.774257+00:00 app[web.1]: 
+2013-07-08T19:50:15.727553+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.755277+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.766801+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.675481) while time zone support is active.
+2013-07-08T19:50:15.732537+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647639) while time zone support is active.
+2013-07-08T19:50:15.732537+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.776622+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.677158) while time zone support is active.
+2013-07-08T19:50:15.776622+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.776622+00:00 app[web.1]: 
+2013-07-08T19:50:15.739783+00:00 app[web.1]: 
+2013-07-08T19:50:15.765685+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.674334) while time zone support is active.
+2013-07-08T19:50:15.779651+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.684952) while time zone support is active.
+2013-07-08T19:50:15.765685+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.732537+00:00 app[web.1]: 
+2013-07-08T19:50:15.777253+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.677319) while time zone support is active.
+2013-07-08T19:50:15.777253+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.777253+00:00 app[web.1]: 
+2013-07-08T19:50:15.733516+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647799) while time zone support is active.
+2013-07-08T19:50:15.733516+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.733516+00:00 app[web.1]: 
+2013-07-08T19:50:15.777573+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.677326) while time zone support is active.
+2013-07-08T19:50:15.777573+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.698185+00:00 app[web.1]: School
+2013-07-08T19:50:15.788511+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.736541+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647805) while time zone support is active.
+2013-07-08T19:50:15.736541+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.736541+00:00 app[web.1]: 
+2013-07-08T19:50:15.743936+00:00 app[web.1]: 
+2013-07-08T19:50:15.747036+00:00 app[web.1]: 
+2013-07-08T19:50:15.724380+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.738485+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.738901+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.738901+00:00 app[web.1]: 
+2013-07-08T19:50:15.744415+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657505) while time zone support is active.
+2013-07-08T19:50:15.744415+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.744415+00:00 app[web.1]: 
+2013-07-08T19:50:15.765685+00:00 app[web.1]: 
+2013-07-08T19:50:15.746595+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657838) while time zone support is active.
+2013-07-08T19:50:15.762302+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667623) while time zone support is active.
+2013-07-08T19:50:15.755277+00:00 app[web.1]: 
+2013-07-08T19:50:15.766801+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.779651+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.807249+00:00 app[web.1]: 
+2013-07-08T19:50:15.812313+00:00 app[web.1]: 
+2013-07-08T19:50:15.739271+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657127) while time zone support is active.
+2013-07-08T19:50:15.739271+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.739271+00:00 app[web.1]: 
+2013-07-08T19:50:15.744834+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657664) while time zone support is active.
+2013-07-08T19:50:15.777573+00:00 app[web.1]: 
+2013-07-08T19:50:15.778461+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.677509) while time zone support is active.
+2013-07-08T19:50:15.778461+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.794508+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.808700+00:00 app[web.1]: 
+2013-07-08T19:50:15.788511+00:00 app[web.1]: 
+2013-07-08T19:50:15.739783+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657329) while time zone support is active.
+2013-07-08T19:50:15.746595+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.746595+00:00 app[web.1]: 
+2013-07-08T19:50:15.744834+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.744834+00:00 app[web.1]: 
+2013-07-08T19:50:15.778461+00:00 app[web.1]: 
+2013-07-08T19:50:15.785952+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.785952+00:00 app[web.1]: 
+2013-07-08T19:50:15.807560+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698373) while time zone support is active.
+2013-07-08T19:50:15.814076+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.699226) while time zone support is active.
+2013-07-08T19:50:15.698695+00:00 app[web.1]: Housing
+2013-07-08T19:50:15.812313+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.699220) while time zone support is active.
+2013-07-08T19:50:15.747036+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.658000) while time zone support is active.
+2013-07-08T19:50:15.754462+00:00 app[web.1]: 
+2013-07-08T19:50:15.745149+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657671) while time zone support is active.
+2013-07-08T19:50:15.745149+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.745149+00:00 app[web.1]: 
+2013-07-08T19:50:15.786554+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685967) while time zone support is active.
+2013-07-08T19:50:15.786554+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.786554+00:00 app[web.1]: 
+2013-07-08T19:50:15.724930+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.647135) while time zone support is active.
+2013-07-08T19:50:15.738901+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657106) while time zone support is active.
+2013-07-08T19:50:15.754933+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.665403) while time zone support is active.
+2013-07-08T19:50:15.754933+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.754933+00:00 app[web.1]: 
+2013-07-08T19:50:15.745625+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.657832) while time zone support is active.
+2013-07-08T19:50:15.745625+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.745625+00:00 app[web.1]: 
+2013-07-08T19:50:15.795657+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.795657+00:00 app[web.1]: 
+2013-07-08T19:50:15.754462+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.778752+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.677515) while time zone support is active.
+2013-07-08T19:50:15.834107+00:00 app[web.1]: 
+2013-07-08T19:50:15.762302+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.755835+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.665770) while time zone support is active.
+2013-07-08T19:50:15.755835+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.755835+00:00 app[web.1]: 
+2013-07-08T19:50:15.796092+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691116) while time zone support is active.
+2013-07-08T19:50:15.832774+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.834543+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706231) while time zone support is active.
+2013-07-08T19:50:15.787118+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.686129) while time zone support is active.
+2013-07-08T19:50:15.833544+00:00 app[web.1]: 
+2013-07-08T19:50:15.762302+00:00 app[web.1]: 
+2013-07-08T19:50:15.763718+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667630) while time zone support is active.
+2013-07-08T19:50:15.763718+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.756610+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.665777) while time zone support is active.
+2013-07-08T19:50:15.796092+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.796092+00:00 app[web.1]: 
+2013-07-08T19:50:15.797157+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691122) while time zone support is active.
+2013-07-08T19:50:15.763718+00:00 app[web.1]: 
+2013-07-08T19:50:15.764139+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.674320) while time zone support is active.
+2013-07-08T19:50:15.764139+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.797157+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.797157+00:00 app[web.1]: 
+2013-07-08T19:50:15.797637+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691317) while time zone support is active.
+2013-07-08T19:50:15.764139+00:00 app[web.1]: 
+2013-07-08T19:50:15.778752+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.778752+00:00 app[web.1]: 
+2013-07-08T19:50:15.756610+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.834107+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.797637+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.797637+00:00 app[web.1]: 
+2013-07-08T19:50:15.799805+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691323) while time zone support is active.
+2013-07-08T19:50:15.832347+00:00 app[web.1]: 
+2013-07-08T19:50:15.812313+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.779193+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.684937) while time zone support is active.
+2013-07-08T19:50:15.779193+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.779193+00:00 app[web.1]: 
+2013-07-08T19:50:15.756610+00:00 app[web.1]: 
+2013-07-08T19:50:15.757080+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.666778) while time zone support is active.
+2013-07-08T19:50:15.757080+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.799805+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.799805+00:00 app[web.1]: 
+2013-07-08T19:50:15.800320+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691482) while time zone support is active.
+2013-07-08T19:50:15.757080+00:00 app[web.1]: 
+2013-07-08T19:50:15.757373+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.666869) while time zone support is active.
+2013-07-08T19:50:15.757373+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.800320+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.800320+00:00 app[web.1]: 
+2013-07-08T19:50:15.757373+00:00 app[web.1]: 
+2013-07-08T19:50:15.758125+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667082) while time zone support is active.
+2013-07-08T19:50:15.758125+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.800634+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691489) while time zone support is active.
+2013-07-08T19:50:15.758125+00:00 app[web.1]: 
+2013-07-08T19:50:15.758438+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667089) while time zone support is active.
+2013-07-08T19:50:15.800634+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.800634+00:00 app[web.1]: 
+2013-07-08T19:50:15.801241+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691646) while time zone support is active.
+2013-07-08T19:50:15.785228+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685706) while time zone support is active.
+2013-07-08T19:50:15.785228+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.758438+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.758438+00:00 app[web.1]: 
+2013-07-08T19:50:15.810413+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698961) while time zone support is active.
+2013-07-08T19:50:15.810413+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.834107+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706057) while time zone support is active.
+2013-07-08T19:50:15.785228+00:00 app[web.1]: 
+2013-07-08T19:50:15.758956+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667252) while time zone support is active.
+2013-07-08T19:50:15.758956+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.758956+00:00 app[web.1]: 
+2013-07-08T19:50:15.810413+00:00 app[web.1]: 
+2013-07-08T19:50:15.810900+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698968) while time zone support is active.
+2013-07-08T19:50:15.785526+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685712) while time zone support is active.
+2013-07-08T19:50:15.785526+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.759870+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667258) while time zone support is active.
+2013-07-08T19:50:15.810900+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.785526+00:00 app[web.1]: 
+2013-07-08T19:50:15.759870+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.759870+00:00 app[web.1]: 
+2013-07-08T19:50:15.785952+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685960) while time zone support is active.
+2013-07-08T19:50:15.787118+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.761227+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667457) while time zone support is active.
+2013-07-08T19:50:15.761227+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.761227+00:00 app[web.1]: 
+2013-07-08T19:50:15.787118+00:00 app[web.1]: 
+2013-07-08T19:50:15.787498+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.686135) while time zone support is active.
+2013-07-08T19:50:15.787498+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.761888+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.667463) while time zone support is active.
+2013-07-08T19:50:15.761888+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.761888+00:00 app[web.1]: 
+2013-07-08T19:50:15.787498+00:00 app[web.1]: 
+2013-07-08T19:50:15.787936+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.686314) while time zone support is active.
+2013-07-08T19:50:15.787936+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.779651+00:00 app[web.1]: 
+2013-07-08T19:50:15.780245+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685134) while time zone support is active.
+2013-07-08T19:50:15.780245+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.787936+00:00 app[web.1]: 
+2013-07-08T19:50:15.788511+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.686321) while time zone support is active.
+2013-07-08T19:50:15.780245+00:00 app[web.1]: 
+2013-07-08T19:50:15.783090+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685141) while time zone support is active.
+2013-07-08T19:50:15.783090+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.783090+00:00 app[web.1]: 
+2013-07-08T19:50:15.831935+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.705252) while time zone support is active.
+2013-07-08T19:50:15.831935+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.783862+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685496) while time zone support is active.
+2013-07-08T19:50:15.783862+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.831935+00:00 app[web.1]: 
+2013-07-08T19:50:15.832347+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.705259) while time zone support is active.
+2013-07-08T19:50:15.832347+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.794508+00:00 app[web.1]: 
+2013-07-08T19:50:15.794899+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690795) while time zone support is active.
+2013-07-08T19:50:15.794899+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.783862+00:00 app[web.1]: 
+2013-07-08T19:50:15.784704+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.685502) while time zone support is active.
+2013-07-08T19:50:15.794899+00:00 app[web.1]: 
+2013-07-08T19:50:15.784704+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.784704+00:00 app[web.1]: 
+2013-07-08T19:50:15.795347+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690953) while time zone support is active.
+2013-07-08T19:50:15.795347+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.789811+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.686480) while time zone support is active.
+2013-07-08T19:50:15.795347+00:00 app[web.1]: 
+2013-07-08T19:50:15.789811+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.789811+00:00 app[web.1]: 
+2013-07-08T19:50:15.790235+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.686487) while time zone support is active.
+2013-07-08T19:50:15.795657+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690959) while time zone support is active.
+2013-07-08T19:50:15.790235+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.790235+00:00 app[web.1]: 
+2013-07-08T19:50:15.790638+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690437) while time zone support is active.
+2013-07-08T19:50:15.790638+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.790638+00:00 app[web.1]: 
+2013-07-08T19:50:15.793112+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690450) while time zone support is active.
+2013-07-08T19:50:15.793112+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.793112+00:00 app[web.1]: 
+2013-07-08T19:50:15.793815+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690624) while time zone support is active.
+2013-07-08T19:50:15.793815+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.793815+00:00 app[web.1]: 
+2013-07-08T19:50:15.794105+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690631) while time zone support is active.
+2013-07-08T19:50:15.794105+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.794105+00:00 app[web.1]: 
+2013-07-08T19:50:15.794508+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.690789) while time zone support is active.
+2013-07-08T19:50:15.807560+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.807560+00:00 app[web.1]: 
+2013-07-08T19:50:15.807994+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698595) while time zone support is active.
+2013-07-08T19:50:15.807994+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.807994+00:00 app[web.1]: 
+2013-07-08T19:50:15.801241+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.808700+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698601) while time zone support is active.
+2013-07-08T19:50:15.808700+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.801241+00:00 app[web.1]: 
+2013-07-08T19:50:15.814076+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.804083+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.691653) while time zone support is active.
+2013-07-08T19:50:15.804083+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.804083+00:00 app[web.1]: 
+2013-07-08T19:50:15.814076+00:00 app[web.1]: 
+2013-07-08T19:50:15.814559+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.700799) while time zone support is active.
+2013-07-08T19:50:15.807249+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698357) while time zone support is active.
+2013-07-08T19:50:15.807249+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.809168+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698761) while time zone support is active.
+2013-07-08T19:50:15.814559+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.814559+00:00 app[web.1]: 
+2013-07-08T19:50:15.809168+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.809168+00:00 app[web.1]: 
+2013-07-08T19:50:15.809530+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.698767) while time zone support is active.
+2013-07-08T19:50:15.817555+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.700808) while time zone support is active.
+2013-07-08T19:50:15.817555+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.817555+00:00 app[web.1]: 
+2013-07-08T19:50:15.698483+00:00 app[web.1]: Transportation
+2013-07-08T19:50:15.809530+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.809530+00:00 app[web.1]: 
+2013-07-08T19:50:15.818812+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.700981) while time zone support is active.
+2013-07-08T19:50:15.818812+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.724380+00:00 app[web.1]: 
+2013-07-08T19:50:15.738485+00:00 app[web.1]: 
+2013-07-08T19:50:15.818812+00:00 app[web.1]: 
+2013-07-08T19:50:15.819221+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.700987) while time zone support is active.
+2013-07-08T19:50:15.819221+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.819221+00:00 app[web.1]: 
+2013-07-08T19:50:16.635746+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=3ms service=713ms status=200 bytes=16132
+2013-07-08T19:50:15.819652+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.701149) while time zone support is active.
+2013-07-08T19:50:15.819652+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.819652+00:00 app[web.1]: 
+2013-07-08T19:50:15.820073+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.701155) while time zone support is active.
+2013-07-08T19:50:15.820073+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.820073+00:00 app[web.1]: 
+2013-07-08T19:50:15.820538+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.704982) while time zone support is active.
+2013-07-08T19:50:15.820538+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.820538+00:00 app[web.1]: 
+2013-07-08T19:50:15.820874+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.704996) while time zone support is active.
+2013-07-08T19:50:15.820874+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.820874+00:00 app[web.1]: 
+2013-07-08T19:50:15.832774+00:00 app[web.1]: 
+2013-07-08T19:50:15.833136+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.705598) while time zone support is active.
+2013-07-08T19:50:15.833136+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.833136+00:00 app[web.1]: 
+2013-07-08T19:50:15.833544+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706050) while time zone support is active.
+2013-07-08T19:50:15.833544+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.834543+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.834543+00:00 app[web.1]: 
+2013-07-08T19:50:15.834832+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706238) while time zone support is active.
+2013-07-08T19:50:15.834832+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.834832+00:00 app[web.1]: 
+2013-07-08T19:50:15.835260+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706401) while time zone support is active.
+2013-07-08T19:50:15.835260+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.835260+00:00 app[web.1]: 
+2013-07-08T19:50:15.835552+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706407) while time zone support is active.
+2013-07-08T19:50:15.835552+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.835552+00:00 app[web.1]: 
+2013-07-08T19:50:15.835951+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706567) while time zone support is active.
+2013-07-08T19:50:15.835951+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.835951+00:00 app[web.1]: 
+2013-07-08T19:50:15.837737+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.706574) while time zone support is active.
+2013-07-08T19:50:15.837737+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.837737+00:00 app[web.1]: 
+2013-07-08T19:50:15.838401+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.707014) while time zone support is active.
+2013-07-08T19:50:15.838401+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.838401+00:00 app[web.1]: 
+2013-07-08T19:50:15.839110+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.707021) while time zone support is active.
+2013-07-08T19:50:15.839110+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.839110+00:00 app[web.1]: 
+2013-07-08T19:50:15.839581+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.716280) while time zone support is active.
+2013-07-08T19:50:15.839581+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.839581+00:00 app[web.1]: 
+2013-07-08T19:50:15.840178+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.716297) while time zone support is active.
+2013-07-08T19:50:15.840178+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.840178+00:00 app[web.1]: 
+2013-07-08T19:50:15.840756+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.717108) while time zone support is active.
+2013-07-08T19:50:15.840756+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.840756+00:00 app[web.1]: 
+2013-07-08T19:50:15.842222+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.717116) while time zone support is active.
+2013-07-08T19:50:15.842222+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.842222+00:00 app[web.1]: 
+2013-07-08T19:50:15.843099+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.717485) while time zone support is active.
+2013-07-08T19:50:15.843099+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.843099+00:00 app[web.1]: 
+2013-07-08T19:50:15.846080+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.717491) while time zone support is active.
+2013-07-08T19:50:15.846080+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.846080+00:00 app[web.1]: 
+2013-07-08T19:50:15.846595+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.717652) while time zone support is active.
+2013-07-08T19:50:15.846595+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.846595+00:00 app[web.1]: 
+2013-07-08T19:50:15.846885+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.717658) while time zone support is active.
+2013-07-08T19:50:15.846885+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.846885+00:00 app[web.1]: 
+2013-07-08T19:50:15.847288+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.718909) while time zone support is active.
+2013-07-08T19:50:15.847288+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.847288+00:00 app[web.1]: 
+2013-07-08T19:50:15.847834+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.718918) while time zone support is active.
+2013-07-08T19:50:15.847834+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.847834+00:00 app[web.1]: 
+2013-07-08T19:50:15.848279+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.719426) while time zone support is active.
+2013-07-08T19:50:15.848279+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.848279+00:00 app[web.1]: 
+2013-07-08T19:50:15.849034+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.719433) while time zone support is active.
+2013-07-08T19:50:15.849034+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.849034+00:00 app[web.1]: 
+2013-07-08T19:50:15.849917+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.719629) while time zone support is active.
+2013-07-08T19:50:15.849917+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.849917+00:00 app[web.1]: 
+2013-07-08T19:50:15.850680+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.719636) while time zone support is active.
+2013-07-08T19:50:15.850680+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.850680+00:00 app[web.1]: 
+2013-07-08T19:50:15.852190+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.719796) while time zone support is active.
+2013-07-08T19:50:15.852190+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.852190+00:00 app[web.1]: 
+2013-07-08T19:50:15.853725+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.719803) while time zone support is active.
+2013-07-08T19:50:15.853725+00:00 app[web.1]:   RuntimeWarning)
+2013-07-08T19:50:15.853725+00:00 app[web.1]: 
+2013-07-08T19:50:16.788184+00:00 heroku[router]: at=info method=GET path=/static/budget/js/jquery.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=6ms status=304 bytes=0
+2013-07-08T19:50:16.803651+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=22ms status=304 bytes=0
+2013-07-08T19:50:15.832774+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-08 14:50:15.705463) while time zone support is active.
+2013-07-08T19:50:16.050141+00:00 app[web.1]: 22
+2013-07-08T19:50:16.830981+00:00 heroku[router]: at=info method=GET path=/static/budget/css/bootstrap-responsive.min.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=6ms service=29ms status=304 bytes=0
+2013-07-08T19:50:16.836791+00:00 heroku[router]: at=info method=GET path=/static/budget/js/jquery.jeditable.mini.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=18ms status=304 bytes=0
+2013-07-08T19:50:16.837738+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=29ms status=404 bytes=1766
+2013-07-08T19:50:16.803013+00:00 heroku[router]: at=info method=GET path=/static/budget/css/bootstrap.min.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=7ms status=304 bytes=0
+2013-07-08T19:50:16.811644+00:00 heroku[router]: at=info method=GET path=/static/budget/css/custom.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=21ms status=304 bytes=0
+2013-07-08T19:50:16.809916+00:00 heroku[router]: at=info method=GET path=/static/budget/css/flat-ui.css host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=3ms service=21ms status=304 bytes=0
+2013-07-08T19:49:35.212656+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=1ms service=424ms status=500 bytes=71150
+2013-07-08T19:50:16.876463+00:00 heroku[router]: at=info method=GET path=/static/budget/js/custom.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=31ms status=304 bytes=0
+2013-07-08T19:50:17.018075+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=damp-brook-6771.herokuapp.com fwd="129.97.124.29" dyno=web.1 connect=2ms service=28ms status=404 bytes=3878

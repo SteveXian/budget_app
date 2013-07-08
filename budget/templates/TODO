@@ -1,6 +1,5 @@
 user.html:
     add .00 after float if not 2 digits
-    check user input is sanitary
     think about whether clicking on the div is the best way to edit, not obvious
 
 update and auto increment term
@@ -9,15 +8,12 @@ fix the changing of length/width when changing from edit/view
 
 add bootstrap tooltips
 
-user_edit:
-    how to keep the approperiate data
-
 bug:
-
-after updating profile, items add up weirdly
 
 top menu glitches a bit when on planning page
 
 make top green section extend whole way
 
-sanitize user input for numbers
+
+0's for the previous terms and greyed out
+highlight the current term
