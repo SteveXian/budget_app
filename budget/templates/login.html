@@ -21,10 +21,13 @@
     <div class="span4" style="margin-top:50px;">
       <div class="well">
         <h4>Welcome back!</h4>
-        <form>
+        <form action='/login_auth/' method="POST">
           <fieldset>
-            <input type="text" class="input-block-level" style="height:45px;" placeholder="Username">
-            <input type="password" class="input-block-level" style="height:45px;"placeholder="Password"> 
+            <input type="text" name="username" class="input-block-level" style="height:45px;" placeholder="Username">
+            <input type="password" name="password" class="input-block-level" style="height:45px;"placeholder="Password"> 
+            {% if error %}
+            <span style="color:red;">{{error}}</span>
+            {% endif %}
             <button type="submit" class="btn btn-primary btn-block btn-large">Sign in</button>
           </fieldset>
         </form>
@@ -32,11 +35,13 @@
 
       <div class="well">
         <h4>Don't have an account?</h4>
-        <form>
+        <form id="create_user" action='/create_user/' method="POST">
           <fieldset>
-            <input type="text" class="input-block-level" style="height:45px;"placeholder="Username">
-            <input type="text" class="input-block-level" style="height:45px;"placeholder="Email">
-            <input type="password" class="input-block-level" style="height:45px;"placeholder="Password"> 
+            <input type="text" id="username" name="username" class="input-block-level" style="height:45px;"placeholder="Username">
+            <span id="username_avail" style="color:green;display:none;">Username Available</span>
+            <span id="username_unavail" style="color:red;display:none;">Username Unavailable</span>
+            <input type="text" id="email" name="email" class="input-block-level" style="height:45px;"placeholder="Email">
+            <input type="password" id="password" name="password" class="input-block-level" style="height:45px;"placeholder="Password"> 
             <button type="submit" class="btn btn-primary btn-block btn-large">Sign up</button> 
           <fieldset>
         </form> 
@@ -44,4 +49,24 @@
     </div>
 </div>        
 </div>
+
+<script type="text/javascript"> 
+$(function() {
+    $('#username').focusout(function() {
+        $.ajax({
+            type: "POST",
+            url: "/check_username",
+            data: { username: $('#username').val()}
+        }).done(function( msg ) {
+            $("#username_unavail").hide();
+            $("#username_avail").show();
+        }).fail(function() { 
+            $("#username_unavail").show();
+            $("#username_avail").hide();
+        });
+    });
+
+});
+
+</script>  
 {% endblock %}

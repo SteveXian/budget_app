@@ -9,6 +9,7 @@ from django.contrib.auth.models import User
 from budget.models import BudgetUser, BudgetPlanningData, BudgetTrackingData
 from budget.aux import format_data_for_view, initiate_user_preset_data, get_limits, sanitize_decimal
 from decimal import *
+from datetime import datetime
 import re
 
 DATA_ID_RE = '(?P<category>[\/a-zA-Z_]*)_(?P<year>\d)(?P<term>.)'
@@ -60,11 +61,19 @@ def user_update(request):
         user = BudgetUser()
 
     user.user_id = user_id
+    if (datetime.now().month >=9):
+        user.current_term = 1
+    elif (datetime.now().month >=5):
+        user.current_term = 3
+    else:
+        user.current_term = 2
     user.start_year = int(request.POST['start_year'])
     user.end_year = int(request.POST['end_year'])
     user.tuition = Decimal(sanitize_decimal(request.POST['tuition']))
-    user.program_length = user.start_year - user.end_year
-    user.current_year = int(request.POST['current_year'])
+    user.saved = Decimal(sanitize_decimal(request.POST['saved']))
+    user.part_time = Decimal(sanitize_decimal(request.POST['part_time']))
+    user.program_length = user.end_year - user.start_year
+    user.current_year = datetime.now().year - user.start_year
     user.coop = request.POST['coop']
     user.sequence = request.POST['sequence']
 
@@ -80,6 +89,7 @@ def user_update(request):
 @login_required
 def user(request):
     budget_user = BudgetUser.objects.get(user_id=request.user.id)
+    print budget_user.user_id
     data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
 
     data = format_data_for_view(budget_user, data_set)

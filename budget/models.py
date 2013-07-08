@@ -12,14 +12,15 @@ TERMS = (
 
 class BudgetUser(models.Model):
     user_id = models.IntegerField(null=False)
-    start_year = models.IntegerField()
-    end_year = models.IntegerField()
-    tuition = models.DecimalField(max_digits=19, decimal_places=2)
-    saved = models.DecimalField(max_digits=19, decimal_places=2)
-    owned = models.DecimalField(max_digits=19, decimal_places=2)
-    program_length = models.IntegerField()
-    current_year = models.IntegerField()
+    start_year = models.IntegerField(null=True)
+    end_year = models.IntegerField(null=True)
+    tuition = models.DecimalField(max_digits=19, decimal_places=2,null=True)
+    saved = models.DecimalField(max_digits=19, decimal_places=2, null=True)
+    part_time = models.DecimalField(max_digits=19, decimal_places=2,null=True)
+    owned = models.DecimalField(max_digits=19, decimal_places=2, null=True)
     current_term = models.IntegerField()
+    program_length = models.IntegerField(null=True)
+    current_year = models.IntegerField(null=True)
     coop = models.BooleanField()
     sequence = models.CharField(max_length=100)
     created = models.DateTimeField()
@@ -36,11 +37,11 @@ class BudgetUser(models.Model):
 
 class BudgetPlanningData(models.Model):
     user_id = models.IntegerField(null=False)
-    label = models.CharField(max_length=100)
-    year = models.IntegerField()
-    term = models.CharField(max_length=2, choices=TERMS)
-    amount = models.DecimalField(max_digits=19, decimal_places=2)
-    income = models.BooleanField(null=False)
+    label = models.CharField(max_length=100, null=True)
+    year = models.IntegerField(null=True)
+    term = models.CharField(max_length=2, choices=TERMS, null=True)
+    amount = models.DecimalField(max_digits=19, decimal_places=2, null=True)
+    income = models.BooleanField()
     created = models.DateTimeField()
     modified = models.DateTimeField()
 
@@ -66,11 +67,11 @@ class BudgetPresetData(models.Model):
 
 class BudgetTrackingData(models.Model):
     user_id = models.IntegerField(null=False)
-    label = models.CharField(max_length=100)
-    description = models.CharField(max_length=2000)
-    year = models.IntegerField()
-    term = models.CharField(max_length=2, choices=TERMS)
-    amount = models.DecimalField(max_digits=19, decimal_places=2)
+    label = models.CharField(max_length=100, null=True)
+    description = models.CharField(max_length=2000, null=True)
+    year = models.IntegerField(null=True)
+    term = models.CharField(max_length=2, choices=TERMS, null=True)
+    amount = models.DecimalField(max_digits=19, decimal_places=2, null=True)
     created = models.DateTimeField()
     modified = models.DateTimeField()
 

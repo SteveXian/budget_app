@@ -10,127 +10,124 @@
 
 <div class="container">
 <div class="row">
-<div class="span3 ordered">
-    <h4>Current Week</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <td></td>
-                <td>Limit</td>
-                <td>Current</td>
-            </tr>
-        </thead>
-        <tbody>
-            {%for item in limits.weekly %}
-            <tr>
-                <td><b>{{item.label}}</b></td>
-                <td>${{item.limit}}</td>
-                <td class="{% if item.over %}red{% else %}green{% endif %}">
-                    ${{item.current}}
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-<br/>
-    <h4>Last 30 Days</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <td></td>
-                <td>Limit</td>
-                <td>Current</td>
-            </tr>
-        </thead>
-        <tbody>
-            {%for item in limits.monthly %}
-            <tr>
-                <td><b>{{item.label}}</b></td>
-                <td>${{item.limit}}</td>
-                <td class="{% if item.over %}red{% else %}green{% endif %}">
-                    ${{item.current}}
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-
-    </table>
-<br/>
-    <h4>Current Term</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <td></td>
-                <td>Limit</td>
-                <td>Current</td>
-            </tr>
-        </thead>
-        <tbody>
-            {%for item in limits.term %}
-            <tr>
-                <td><b>{{item.label}}</b></td>
-                <td>${{item.limit}}</td>
-                <td class="{% if item.over %}red{% else %}green{% endif %}">
-                    ${{item.current}}
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-
-    </table>
-<br/>
-</div>
-<div class="span8">
-
-    <div style="padding-bottom:30px;">
-        <form id="tracking_add" class="form-horizontal" action='/tracking/add/' method="POST">
-            <div class="span2 input-large" style="margin-left:0px;">  
-                <select id="category" name="category" class="span2">
-                    <option value="" selected="selected">Choose Category</option>
-                    <option value="Food">Food</option>
-                    <option value="School">School</option>
-                    <option value="Housing">Housing</option>
-                    <option value="Transportation">Transportation</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="span2">
-                <input type="text" id="description" name="description" placeholder="Description" class="input-large"></input>
-            </div>
-            <div class="input-prepend span2">
-                <input type="text" id="amount" name="amount" placeholder="Amount" class="input-small"></input>
-            </div>
-            <div class="span2">
-                <button class="btn btn-primary">Add Item</button>
-            </div>
-        </form>
-    </div>
-    <br/>
-    <div class="bordered">
+    <div class="span4 ordered">
+        <h4>Current Week</h4>
         <table class="table">
             <thead>
                 <tr>
-                    <th>Category</th>
-                    <th>Label</th>
-                    <th>Amount</th>
-                    <th>Date</th>
-                    <th></th>
+                    <td></td>
+                    <td>Limit</td>
+                    <td>Current</td>
                 </tr>
             </thead>
             <tbody>
-                {% for item in data %}
+                {%for item in limits.weekly %}
                 <tr>
-                    <td>{{item.label}}</td>
-                    <td>{{item.description}}</td>
-                    <td>{{item.amount}}</td>
-                    <td>{{item.created}}</td>
-                    <td style="width:30px;"><a class="icon-trash" href="/tracking/delete/{{item.id}}"></a></td>
+                    <td><b>{{item.label}}</b></td>
+                    <td>${{item.limit}}</td>
+                    <td class="{% if item.over %}red{% else %}green{% endif %}">
+                        ${{item.current}}
+                    </td>
+                </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
+    <div class="span4 ordered">
+        <h4>Last 30 Days</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Limit</td>
+                    <td>Current</td>
+                </tr>
+            </thead>
+            <tbody>
+                {%for item in limits.monthly %}
+                <tr>
+                    <td><b>{{item.label}}</b></td>
+                    <td>${{item.limit}}</td>
+                    <td class="{% if item.over %}red{% else %}green{% endif %}">
+                        ${{item.current}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+    <div class="span4 ordered">
+        <h4>Current Term</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Limit</td>
+                    <td>Current</td>
+                </tr>
+            </thead>
+            <tbody>
+                {%for item in limits.term %}
+                <tr>
+                    <td><b>{{item.label}}</b></td>
+                    <td>${{item.limit}}</td>
+                    <td class="{% if item.over %}red{% else %}green{% endif %}">
+                        ${{item.current}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
 </div>
+
+<form id="tracking_add" class="form-horizontal" action='/tracking/add/' method="POST">
+<div class="row">
+    <div class="span3">
+      <select id="category" name="category" style="display:inline;">
+            <option value="" selected="selected">Choose Category</option>
+            <option value="Food">Food</option>
+            <option value="School">School</option>
+            <option value="Housing">Housing</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="span3">
+        <input type="text" id="description" name="description" placeholder="Description" class="input-large" style="display:inline;"></input>
+    </div>
+    <div class="span4">
+        <input type="text" id="amount" name="amount" placeholder="Amount" class="input-large" style="display:inline;"></input>
+    </div>
+    <div class="span2">
+        <button class="btn btn-primary">Add Item</button>
+    </div>
 </div>
+</form>
+<table class="table bordered">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Label</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in data %}
+        <tr>
+            <td>{{item.label}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.amount}}</td>
+            <td>{{item.created}}</td>
+            <td style="width:30px;"><a class="icon-trash" href="/tracking/delete/{{item.id}}"></a></td>
+        {% endfor %}
+    </tbody>
+</table>
+
 </div>
 
 <script type="text/javascript">

@@ -46,7 +46,7 @@
     </thead>
     <tbody>
         <tr>
-            <td><b>Inflows</b></td>
+            <td><b>Income</b></td>
         </tr>
         {% for row in data.income %}
         <tr>
@@ -57,7 +57,7 @@
         </tr>
         {% endfor %}
         <tr>
-            <td style="text-align:right;"><b>Total Inflow</b></td>
+            <td style="text-align:right;"><b>Total Income</b></td>
             {% for year in budget_user.remaining_years %}
             <td><div id="{{year}}F_inflow_sum"></div> </td>
             <td><div id="{{year}}W_inflow_sum"></div></td>

@@ -9,7 +9,7 @@
         First, we need to get to know you better.</h2>
 </div>  
 <div id ="intro1" class="container">  
-<form id='user_info' class="form-horizontal" action='' method="POST">  
+<form id='user_info' class="form-horizontal" action='/user/update/' method="POST">  
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>When did you start university?</h4>
@@ -51,11 +51,29 @@
     </div>
     <div class="row spaced-out">
         <div class="offset2 span4">
+            <h4>How much money do you have saved up?</h4>
+        </div>
+        <div class="span6">
+            <input id="saved" name="saved" type="text" placeholder="e.g. 3000"></input>
+        </div>
+    </div>
+    <div class="row spaced-out">
+        <div class="offset2 span4">
+            <h4>How much can you make per term working part-time?</h4>
+        </div>
+        <div class="span6">
+            <input id="part_time" name="part_time" type="text" placeholder="e.g. 5000"></input>
+        </div>
+    </div>
+    <div class="row spaced-out">
+        <div class="offset2 span4">
             <h4>Are you in a co-op program?</h4>
         </div>
         <div class="span3">
-            <a id="coop_btn" class="btn btn-primary btn-block" onclick="change_coop();">Yes</a>
-            <input type="hidden" id="coop" name="coop" value="True"></input>
+            <select id="coop" name="coop" >
+                <option value="True">Yes</option>
+                <option value="False">No</option>
+            </select>
         </div>
     </div>
 
@@ -71,7 +89,7 @@
 <div id="intro2" class="container"> 
     <div class="alert">  
         <a class="close" data-dismiss="alert">×</a>  
-        Toggle on the Study/Work buttons to change your term type!  
+        Click on the buttons to change your term type to work or study!  
     </div>
 
     <div class="row spaced-out" style="text-align:center">
@@ -96,21 +114,6 @@
 <script type="text/javascript">
 function form_submit() {
     $('#user_info').submit();
-}
-
-function change_coop() {
-    var val = $('#coop_btn').text();
-    if (val == "Yes") {
-        $('#coop_btn').text('No');
-        $('#coop').val('False');
-        $('#coop_btn').addClass('btn-info');
-        $('#coop_btn').removeClass('btn-primary');
-    } else {
-        $('#coop_btn').text('Yes');
-        $('#coop').val('True');
-        $('#coop_btn').removeClass('btn-info');
-        $('#coop_btn').addClass('btn-primary');
-    }
 }
 
 function change(year, term) {
@@ -180,8 +183,7 @@ $(function(){
             }
         }
         $('#sequence').val(sequence);
-        alert($('#sequence').val());
-        return false;
+        return true;
     })
 });
 

@@ -45,30 +45,24 @@ def initiate_user_preset_data(program, user):
         for term in [FALL, WINTER, SPRING]:
             coop = True if user.sequence[cnt] == 'W' else False
             program_data  = data_set.filter(year=year, coop=coop)
-            if user.sequence[cnt] == 'O':
-                for data in program_data:
-                    inserts.append(BudgetPlanningData(
-                        user_id = user.user_id,
-                        label = data.label,
-                        year = year,
-                        term = term,
-                        income = data.income,
-                        amount = 0,
-                        created = datetime.today(),
-                        modified = datetime.today(),
-                    ))
-            else:
-                for data in program_data:
-                    inserts.append(BudgetPlanningData(
-                        user_id = user.user_id,
-                        label = data.label,
-                        year = year,
-                        term = term,
-                        income = data.income,
-                        amount = data.amount,
-                        created = datetime.today(),
-                        modified = datetime.today(),
-                    ))
+            for data in program_data:
+                if user.sequence[cnt] == 'O':
+                    data.amount = 0;
+                if data.label == 'School' and user.sequence[cnt] == 'S':
+                    data.amount = user.tuition + 200
+                if data.label == 'Part Time' and user.sequence[cnt] == 'S':
+                    data.amount = user.part_time
+                inserts.append(BudgetPlanningData(
+                    user_id = user.user_id,
+                    label = data.label,
+                    year = year,
+                    term = term,
+                    income = data.income,
+                    amount = data.amount,
+                    created = datetime.today(),
+                    modified = datetime.today(),
+                ))
+
             cnt += 1
     BudgetPlanningData.objects.bulk_create(inserts)
 
@@ -122,7 +116,7 @@ def get_limits(user_id):
             label_data['label'] = label['label']
             if term == 'weekly':
                 label_data['limit'] = (((plan/4)/30)*7)
-                monday_of_this_week = timezone.now().date() - timedelta(days=(timezone.now().date().isocalendar()[2] - 1))
+                monday_of_this_week = datetime.now().date() - timedelta(days=(datetime.now().date().isocalendar()[2] - 1))
                 for item in current_data.filter(created__gte=monday_of_this_week, label=label['label']):
                     label_data['current'] += item.amount
 
