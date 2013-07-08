@@ -12,7 +12,7 @@ from decimal import *
 from datetime import datetime
 import re
 
-DATA_ID_RE = '(?P<category>[\/a-zA-Z_]*)_(?P<year>\d)(?P<term>.)'
+DATA_ID_RE = '(?P<category>[\/a-zA-Z_ ]*)_(?P<year>\d)(?P<term>.)'
 
 @login_required 
 def index(request):
