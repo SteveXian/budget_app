@@ -103,7 +103,6 @@ TERM[3]='S'
 def get_limits(user_id):
     user = BudgetUser.objects.get(user_id=user_id)
     labels = BudgetPlanningData.objects.filter(income=False).values('label').distinct()
-    print user
     plan_data = BudgetPlanningData.objects.filter(user_id=user_id, year=user.current_year, term=TERM[user.current_term])
     current_data = BudgetTrackingData.objects.filter(user_id=user_id, year=user.current_year, term=user.current_term)
     

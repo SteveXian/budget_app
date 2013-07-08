@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %} Test {% endblock %}
+
+{% block planning %}active{% endblock %}
+
+{% block content %}
+
+<div id="top_info" class="well green-well intro" style="width:100%;">
+    <h2>Thanks for signing up!<br/>
+        First, we need to get to know you better.</h2>
+</div>  
+<div id ="intro1" class="container">  
+<form class="form-horizontal" action='' method="POST">  
+    <div class="row spaced-out">
+        <div class="offset2 span4">
+            <h4>When did you start university?</h4>
+        </div>
+        <div class="span6">
+            <select id="starting_year" name="starting_year">
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+            </select>
+        </div>
+    </div>
+    <div class="row spaced-out">
+        <div class="offset2 span4">
+            <h4>When do you graduate?</h4>
+        </div>
+        <div class="span6">
+            <select id="ending_year" name="ending_year">
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+            </select>
+        </div>
+    </div>
+    <div class="row spaced-out">
+        <div class="offset2 span4">
+            <h4>How much is your tuition per term?</h4>
+            
+        </div>
+        <div class="span6">
+            <input id="saved_amount" name="saved_amount" type="text" placeholder="e.g. 2000"></input>
+        </div>
+    </div>
+    <div class="row spaced-out">
+        <div class="offset2 span4">
+            <h4>Are you in a co-op program?</h4>
+            
+        </div>
+        <div class="span6">
+            <input id="owned_amount" name="owned_amount" type="text" placeholder="e.g. 1500"></input>
+        </div>
+    </div>
+
+    <div class="row spaced-out" style="text-align:center;">
+        <div class="offset2 span7">
+            <a class="btn btn-large btn-block btn-primary" onclick="intro2();">Next!</a>
+        </div>
+    </div>
+</form>
+</div>
+
+<div id="intro2" class="container"> 
+    <div class="alert">  
+        <a class="close" data-dismiss="alert">×</a>  
+        Toggle on the Study/Work buttons to change your term type!  
+    </div>
+
+    <div class="row spaced-out" style="text-align:center">
+        <div class="offset1 span2"></div>
+        <div class="span2"><h4>Fall</h4></div>
+        <div class="span2"><h4>Winter</h4></div>
+        <div class="span2"><h4>Spring</h4></div>
+    </div>
+
+    <div id="intro2_sequence"></div>
+
+
+
+    <div class="row spaced-out" style="text-align:center;">
+        <div class="offset3 span3">
+            <a class="btn btn-large btn-block btn-primary" onclick="intro1();">Back</a>
+        </div>
+        <div class="span3">
+            <a class="btn btn-large btn-block btn-primary">Next!</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+function change(year, term) {
+    var val = $('#' + year + '_' + term).text();
+    if (val == "Study") {
+        $('#' + year + '_' + term).text('Work');
+        $('#' + year + '_' + term).addClass('btn-info');
+        $('#' + year + '_' + term).removeClass('btn-primary');
+    } else {
+        $('#' + year + '_' + term).text('Study');
+        $('#' + year + '_' + term).removeClass('btn-info');
+        $('#' + year + '_' + term).addClass('btn-primary');
+    }
+}
+
+function intro1(){
+    $('#intro2').hide();
+    $('#intro1').show();
+}
+
+function intro2(){
+    $('#intro1').hide();
+    $('#intro2').show();
+    var start = $('#starting_year').val();
+    var end = $('#ending_year').val();
+    $('#intro2_sequence').empty();
+    for (var year = start; year<end; year++) {
+        var next = parseInt(year)+1;
+        $('#intro2_sequence').append('<div id="sequence_'+year+'" class="row spaced-out"><div class="offset1 span2"><h3>'+year + '/' + next +'</h3></div></div>');
+        for (var term =0;term <3;term++) {
+            var style="btn-primary";
+            var type="Study";
+            if (term == 2) {
+                style="btn-info";
+                type="Work";
+            }
+            var toggle = '<div class="span2"><a id="'+year+'_'+term+'" class="btn '+style+' btn-block" onclick="change('+year+', '+term+');">'+type+'</a></div>';
+            $('#sequence_'+year).append(toggle);
+        }
+    }
+}
+
+$(function(){
+    $('#intro2').hide();
+});
+
+</script>
+
+
+{% endblock %}

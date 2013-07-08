@@ -12,9 +12,10 @@ TERMS = (
 
 class BudgetUser(models.Model):
     user_id = models.IntegerField(null=False)
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    program = models.CharField(max_length=500)
+    start_year = models.IntegerField()
+    end_year = models.IntegerField()
+    saved = models.DecimalField(max_digits=19, decimal_places=2)
+    owned = models.DecimalField(max_digits=19, decimal_places=2)
     program_length = models.IntegerField()
     current_year = models.IntegerField()
     current_term = models.IntegerField()
@@ -30,7 +31,7 @@ class BudgetUser(models.Model):
         super(BudgetUser, self).save()
 
     def __unicode__( self ):
-        return "{0} {1}".format( self.first_name, self.program)
+        return "User {0}".format( str(self.user_id) )
 
 class BudgetPlanningData(models.Model):
     user_id = models.IntegerField(null=False)

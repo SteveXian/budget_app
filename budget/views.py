@@ -19,7 +19,7 @@ def index(request):
         budget_user = BudgetUser.objects.get(user_id = request.user.id)
         return redirect('/planning/')
     except:
-        return redirect('/user/edit/')
+        return redirect('/intro/')
 
 def user_login(request):
     return render(request, 'login.html', {})
@@ -28,8 +28,12 @@ def user_logout(request):
     logout(request)
     return redirect('/')
 
-def test(request):
-    return render(request, 'test.html', {})
+def intro(request):
+    try:
+        budget_user = BudgetUser.objects.get(user_id = request.user.id)
+        return render(request, 'intro.html', {})
+    except:
+        return render(request, 'intro.html', {'new_user': True})
 
 @login_required 
 def user_edit(request):
@@ -62,9 +66,6 @@ def user_update(request):
         sequence += request.POST[str(year)+'_sequence']
 
     user.user_id = user_id
-    user.first_name = str(request.POST['first_name'])
-    user.last_name = str(request.POST['last_name'])
-    user.program = str(request.POST['program'])
     user.program_length = int(request.POST['program_length'])
     user.current_year = int(request.POST['current_year'])
     user.current_term = int(request.POST['current_term'])

@@ -4,6 +4,7 @@
 {% block content %}
 <br />
 <br />
+<div class="container">
 <form class="form-horizontal" action='/login_auth/' method="POST"> 
     <div class="control-group">
     <!-- Username -->
@@ -25,10 +26,11 @@
 
     <div class="control-group">
         <div class="controls">
-            <button class="btn btn-success">Login</button> 
-            <a class="btn btn-success" href="/new_user/">Create Account </a>
+            <button class="btn btn-primary">Login</button> 
+            <a class="btn btn-primary" href="/new_user/">Create Account </a>
         </div>
     </div>
-</form>             
+</form>    
+</div>         
 
 {% endblock %}

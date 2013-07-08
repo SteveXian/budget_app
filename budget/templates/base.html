@@ -2,6 +2,7 @@
 <html lang="en">
 {% load staticfiles %}
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href="/static/budget/css/bootstrap.min.css" rel="stylesheet">
   <link href="/static/budget/css/bootstrap-responsive.min.css" rel="stylesheet">
   <link href="/static/budget/css/flat-ui.css" rel="stylesheet">
@@ -21,9 +22,9 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" style="text-decoration:none;" href="/">Waterloo Banking Budget</a>
+          <a class="brand" style="text-decoration:none;margin:0px;" href="/"><span class="logofont">uPlan</span> <span class="betafont"><sup>BETA</sup></span></a>
           <div class="nav-collapse collapse">
-            {% if user.is_authenticated %}
+            {% if user.is_authenticated and not new_user %}
             <ul class="nav">
               <li class="{% block planning %}{% endblock %}">
                 <a href="/planning">Planning</a>

@@ -43,6 +43,26 @@ a {
     text-decoration: none;
 }
 
+h1,h2 {
+    font-family: "Abril Fatface",​ Arial, sans-serif;
+}
+
+.logofont
+{
+    font-family: "Abril Fatface",​ Arial, sans-serif;
+    line-height: 25px;
+    margin:0px;
+    font-size:20px;
+}
+.betafont
+{
+    font-family: "Lato",​ sans-serif;
+    line-height: 25px;
+    margin:0px;
+    font-size:15px;
+
+}
+
 #floater    {float:left; height:50%; margin-bottom:-20px;}
 #content    {clear:both; height:240px; position:relative;}
 
