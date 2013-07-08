@@ -183,6 +183,14 @@ $(function(){
             }
         }
         $('#sequence').val(sequence);
+        if(!$('#tuition').val()) {
+            alert("Please Fill In Your Tuition!");
+            return false;
+        }
+        if(!$('#saved').val()) {
+            alert("Please Fill In Your Savings!");
+            return false;
+        }
         return true;
     })
 });
