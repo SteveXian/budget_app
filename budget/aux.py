@@ -16,6 +16,12 @@ EXAMPLE = [
     { 'income': True, 'program': 'default', 'label': 'Salary', 'year': 5, 'coop': True, 'amount': 16000},
 ]
 
+def sanitize_decimal(amount):
+    for char in ['$', ',', ' ']:
+        amount = amount.replace(char, "")
+    return amount
+
+
 # []
 #
 def parse_preset_data(data_set):

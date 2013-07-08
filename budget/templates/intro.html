@@ -2,8 +2,6 @@
 
 {% block title %} Test {% endblock %}
 
-{% block planning %}active{% endblock %}
-
 {% block content %}
 
 <div id="top_info" class="well green-well intro" style="width:100%;">
@@ -11,13 +9,13 @@
         First, we need to get to know you better.</h2>
 </div>  
 <div id ="intro1" class="container">  
-<form class="form-horizontal" action='' method="POST">  
+<form id='user_info' class="form-horizontal" action='' method="POST">  
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>When did you start university?</h4>
         </div>
         <div class="span6">
-            <select id="starting_year" name="starting_year">
+            <select id="start_year" name="start_year">
                 <option value="2008">2008</option>
                 <option value="2009">2009</option>
                 <option value="2010">2010</option>
@@ -33,7 +31,7 @@
             <h4>When do you graduate?</h4>
         </div>
         <div class="span6">
-            <select id="ending_year" name="ending_year">
+            <select id="end_year" name="end_year">
                 <option value="2013">2013</option>
                 <option value="2014">2014</option>
                 <option value="2015">2015</option>
@@ -46,19 +44,18 @@
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>How much is your tuition per term?</h4>
-            
         </div>
         <div class="span6">
-            <input id="saved_amount" name="saved_amount" type="text" placeholder="e.g. 2000"></input>
+            <input id="tuition" name="tuition" type="text" placeholder="e.g. 2000"></input>
         </div>
     </div>
     <div class="row spaced-out">
         <div class="offset2 span4">
             <h4>Are you in a co-op program?</h4>
-            
         </div>
-        <div class="span6">
-            <input id="owned_amount" name="owned_amount" type="text" placeholder="e.g. 1500"></input>
+        <div class="span3">
+            <a id="coop_btn" class="btn btn-primary btn-block" onclick="change_coop();">Yes</a>
+            <input type="hidden" id="coop" name="coop" value="True"></input>
         </div>
     </div>
 
@@ -67,6 +64,7 @@
             <a class="btn btn-large btn-block btn-primary" onclick="intro2();">Next!</a>
         </div>
     </div>
+    <input type="hidden" id="sequence" name="sequence" value=""> </input>
 </form>
 </div>
 
@@ -85,23 +83,44 @@
 
     <div id="intro2_sequence"></div>
 
-
-
     <div class="row spaced-out" style="text-align:center;">
         <div class="offset3 span3">
             <a class="btn btn-large btn-block btn-primary" onclick="intro1();">Back</a>
         </div>
         <div class="span3">
-            <a class="btn btn-large btn-block btn-primary">Next!</a>
+            <a class="btn btn-large btn-block btn-primary" onclick="form_submit();">Next!</a>
         </div>
     </div>
 </div>
 
 <script type="text/javascript">
+function form_submit() {
+    $('#user_info').submit();
+}
+
+function change_coop() {
+    var val = $('#coop_btn').text();
+    if (val == "Yes") {
+        $('#coop_btn').text('No');
+        $('#coop').val('False');
+        $('#coop_btn').addClass('btn-info');
+        $('#coop_btn').removeClass('btn-primary');
+    } else {
+        $('#coop_btn').text('Yes');
+        $('#coop').val('True');
+        $('#coop_btn').removeClass('btn-info');
+        $('#coop_btn').addClass('btn-primary');
+    }
+}
+
 function change(year, term) {
     var val = $('#' + year + '_' + term).text();
     if (val == "Study") {
-        $('#' + year + '_' + term).text('Work');
+        if($('#coop').val() == "True") {
+            $('#' + year + '_' + term).text('Work');
+        }else{
+            $('#' + year + '_' + term).text('Off');
+        }
         $('#' + year + '_' + term).addClass('btn-info');
         $('#' + year + '_' + term).removeClass('btn-primary');
     } else {
@@ -119,8 +138,8 @@ function intro1(){
 function intro2(){
     $('#intro1').hide();
     $('#intro2').show();
-    var start = $('#starting_year').val();
-    var end = $('#ending_year').val();
+    var start = $('#start_year').val();
+    var end = $('#end_year').val();
     $('#intro2_sequence').empty();
     for (var year = start; year<end; year++) {
         var next = parseInt(year)+1;
@@ -130,7 +149,11 @@ function intro2(){
             var type="Study";
             if (term == 2) {
                 style="btn-info";
-                type="Work";
+                if($('#coop').val() == "True") {
+                    type="Work";
+                }else{
+                    type="Off";
+                }
             }
             var toggle = '<div class="span2"><a id="'+year+'_'+term+'" class="btn '+style+' btn-block" onclick="change('+year+', '+term+');">'+type+'</a></div>';
             $('#sequence_'+year).append(toggle);
@@ -140,6 +163,26 @@ function intro2(){
 
 $(function(){
     $('#intro2').hide();
+    $('#user_info').submit(function(){
+        var start = $('#start_year').val();
+        var end = $('#end_year').val();
+        var sequence = '';
+        for (var year = start; year<end; year++) {
+            for (var term =0;term <3;term++) {
+                var val = $('#'+year+'_'+term).text();
+                if (val == 'Study') {
+                    sequence += 'S';
+                } else if (val == 'Work') {
+                    sequence += 'W';
+                } else if (val == 'Off') {
+                    sequence += 'O';
+                }
+            }
+        }
+        $('#sequence').val(sequence);
+        alert($('#sequence').val());
+        return false;
+    })
 });
 
 </script>

@@ -1,36 +1,47 @@
 {% extends "base.html" %}
 
 {% block title %} User Login {% endblock %}
+{% block body %} background-color:#1ABC9C; {% endblock %}
 {% block content %}
 <br />
 <br />
 <div class="container">
-<form class="form-horizontal" action='/login_auth/' method="POST"> 
-    <div class="control-group">
-    <!-- Username -->
-        <label class="control-label"  for="username">Username</label>
-        <div class="controls">
-            <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-        </div>
-  </div>
-
-    <div class="control-group">
-        <label class="control-label" for="password">Password</label>
-        <div class="controls">
-            <input type="password" id="password" name="password" placeholder="" class="input-xlarge">    
-            {% if error %}
-            <span style="color:red;">{{error}}</span>
-            {% endif %} 
-        </div>
+<div class="row">
+    <div class="span8" style="padding-top:30px;">
+      <img src="/static/budget/img/uplan_home.png" />
+      <h1 style="color:white;font-size:40px;"> uPlan can help students plan their finances for university</h1>
+      <h3> This tool will help you:
+      <ul> 
+        <li style="line-height:40px;">Generate a customized financial plan</li>
+        <li style="line-height:40px;">Figure out which terms you will be short on money </li>
+        <li style="line-height:40px;">Create a realistic termly budget</li>
+        <li style="line-height:40px;"> Understand your financial situtation during and after university </li>
+      </ul></h3>
     </div>
+    <div class="span4" style="margin-top:50px;">
+      <div class="well">
+        <h4>Welcome back!</h4>
+        <form>
+          <fieldset>
+            <input type="text" class="input-block-level" style="height:45px;" placeholder="Username">
+            <input type="password" class="input-block-level" style="height:45px;"placeholder="Password"> 
+            <button type="submit" class="btn btn-primary btn-block btn-large">Sign in</button>
+          </fieldset>
+        </form>
+      </div>
 
-    <div class="control-group">
-        <div class="controls">
-            <button class="btn btn-primary">Login</button> 
-            <a class="btn btn-primary" href="/new_user/">Create Account </a>
-        </div>
+      <div class="well">
+        <h4>Don't have an account?</h4>
+        <form>
+          <fieldset>
+            <input type="text" class="input-block-level" style="height:45px;"placeholder="Username">
+            <input type="text" class="input-block-level" style="height:45px;"placeholder="Email">
+            <input type="password" class="input-block-level" style="height:45px;"placeholder="Password"> 
+            <button type="submit" class="btn btn-primary btn-block btn-large">Sign up</button> 
+          <fieldset>
+        </form> 
+      </div>    
     </div>
-</form>    
-</div>         
-
+</div>        
+</div>
 {% endblock %}

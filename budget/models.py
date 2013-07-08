@@ -14,6 +14,7 @@ class BudgetUser(models.Model):
     user_id = models.IntegerField(null=False)
     start_year = models.IntegerField()
     end_year = models.IntegerField()
+    tuition = models.DecimalField(max_digits=19, decimal_places=2)
     saved = models.DecimalField(max_digits=19, decimal_places=2)
     owned = models.DecimalField(max_digits=19, decimal_places=2)
     program_length = models.IntegerField()

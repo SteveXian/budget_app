@@ -7,7 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from budget.models import BudgetUser, BudgetPlanningData, BudgetTrackingData
-from budget.aux import format_data_for_view, initiate_user_preset_data, get_limits
+from budget.aux import format_data_for_view, initiate_user_preset_data, get_limits, sanitize_decimal
 from decimal import *
 import re
 
@@ -59,18 +59,14 @@ def user_update(request):
     else:
         user = BudgetUser()
 
-    length = int(request.POST['program_length'])
-    current = int(request.POST['current_year'])
-    sequence = ''
-    for year in range(current, length+1):
-        sequence += request.POST[str(year)+'_sequence']
-
     user.user_id = user_id
-    user.program_length = int(request.POST['program_length'])
+    user.start_year = int(request.POST['start_year'])
+    user.end_year = int(request.POST['end_year'])
+    user.tuition = Decimal(sanitize_decimal(request.POST['tuition']))
+    user.program_length = user.start_year - user.end_year
     user.current_year = int(request.POST['current_year'])
-    user.current_term = int(request.POST['current_term'])
     user.coop = request.POST['coop']
-    user.sequence = sequence
+    user.sequence = request.POST['sequence']
 
     user.save()
 
@@ -108,7 +104,7 @@ def planning_update(request):
                                             label = result.group('category'),
                                             year = result.group('year'),
                                             term = result.group('term'))
-    data.amount = Decimal(request.POST['value'].replace(",", ""))
+    data.amount = Decimal(sanitize_decimal(request.POST['value']))
     data.save()
     return HttpResponse('%.2f' % data.amount)
 
@@ -135,7 +131,7 @@ def tracking_add(request):
     data.description = str(request.POST['description'])
     data.year = int(budget_user.current_year)
     data.term = int(budget_user.current_term)
-    data.amount= Decimal(request.POST['amount'].replace(",", ""))
+    data.amount= Decimal(sanitize_decimal(request.POST['amount']))
     data.save()
     return redirect('/tracking/')
 

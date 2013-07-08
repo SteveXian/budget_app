@@ -17,7 +17,7 @@
   <title>{% block title %}{% endblock %}</title>
   {% block head %}{% endblock %}
 </head>
-<body>
+<body style="{% block body %}{% endblock %}">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -31,9 +31,6 @@
               </li>
               <li class="{% block tracking %}{% endblock %}">
                 <a href="/tracking/">Tracking</a>
-              </li>
-              <li class="{% block user_edit %}{% endblock %}">
-                <a href="/user/edit/">Edit User</a>
               </li>
             </ul>
             {% endif %}
