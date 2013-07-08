@@ -19,6 +19,53 @@ table.fixed td { overflow: hidden; }
     color:green;
 }
 
+.green-well {
+    background-color: #1abc9c;
+    color:white;
+    text-align: center;
+}
+
+.spaced-out{
+    margin-bottom:30px;
+}
+
+.intro {
+    font-size:20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+body {
+    font-family: "Lato",​sans-serif;
+}
+
 a {
     text-decoration: none;
 }
+
+h1,h2 {
+    font-family: "Roboto Slab",​ Arial, sans-serif;
+    font-weight: 700;
+}
+
+.logofont
+{
+    font-family: "Roboto Slab",​ Arial, sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+    margin:0px;
+    font-size:20px;
+}
+.betafont
+{
+    font-family: "Lato",​ sans-serif;
+    line-height: 25px;
+    margin:0px;
+    font-size:15px;
+
+}
+
+#floater    {float:left; height:50%; margin-bottom:-20px;}
+#content    {clear:both; height:240px; position:relative;}
+
+
