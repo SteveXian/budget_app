@@ -16,23 +16,11 @@
  
     </div>  
 <div class="row">
-<!--div class="span3 bordered">
-<table class="table">
-    <tr><td>Name</td><td> {{budget_user.first_name}} {{budget_user.last_name}}<td/></tr>
-    <tr><td>Program</td><td> {{budget_user.program}}<td/></tr>
-    <tr><td>Program Length</td><td> {{budget_user.program_length}}<td/></tr>
-    <tr><td>Current Year</td><td> {{budget_user.current_year}}<td/></tr>
-    <tr><td>Current Term</td><td> {{budget_user.current_term}}<td/></tr>
-    <tr><td>Sequence</td><td> {{budget_user.sequence}}<td/></tr>
-    <tr><td>Coop</td><td> {{budget_user.coop}}<td/></tr>
-
-</table>
-</div-->
 <div class="span12 bordered">
 <table class="table fixed" style="width:95%;">
     <thead>
         <tr>
-            <td style="width:100px;"></td>
+            <td style="width:130px;"></td>
             {% for year in budget_user.remaining_years %}
             <th colspan="3">Year {{year}}</th>
             {% endfor %}
@@ -45,6 +33,16 @@
         </tr>
     </thead>
     <tbody>
+
+        <tr>
+            <td><b>Beginning Balance</b></td>
+            {% for year in budget_user.remaining_years %}
+            <td><div id="{{year}}F_cumu_sum"></div> </td>
+            <td><div id="{{year}}W_cumu_sum"></div></td>
+            <td><div id="{{year}}S_cumu_sum"></div></td>
+            {% endfor %}
+        </tr>
+
         <tr>
             <td><b>Income</b></td>
         </tr>
@@ -57,7 +55,7 @@
         </tr>
         {% endfor %}
         <tr>
-            <td style="text-align:right;"><b>Total Income</b></td>
+            <td><b>Total Income</b></td>
             {% for year in budget_user.remaining_years %}
             <td><div id="{{year}}F_inflow_sum"></div> </td>
             <td><div id="{{year}}W_inflow_sum"></div></td>
@@ -82,7 +80,7 @@
         {% endfor %}
 
         <tr>
-            <td style="text-align:right;"><b>Total Outflow</b></td>
+            <td><b>Total Outflow</b></td>
             {% for year in budget_user.remaining_years %}
             <td><div id="{{year}}F_outflow_sum"></div> </td>
             <td><div id="{{year}}W_outflow_sum"></div></td>
@@ -102,11 +100,11 @@
             {% endfor %}
         </tr>
         <tr>
-            <td><b>Cumulative Balance</b></td>
+            <td><b>Money Needed</b></td>
             {% for year in budget_user.remaining_years %}
-            <td><div id="{{year}}F_cumu_sum"></div> </td>
-            <td><div id="{{year}}W_cumu_sum"></div></td>
-            <td><div id="{{year}}S_cumu_sum"></div></td>
+            <td><div id="{{year}}F_term_need"></div> </td>
+            <td><div id="{{year}}W_term_need"></div></td>
+            <td><div id="{{year}}S_term_need"></div></td>
             {% endfor %}
         </tr>
 
@@ -125,6 +123,7 @@ budget_global.sum = 0;
 budget_global.TERMS = ['F','W','S'];
 budget_global.CURRENT_YEAR = {{budget_user.current_year}};
 budget_global.PROGRAM_LENGTH = {{budget_user.program_length}};
+budget_global.SAVED = {{budget_user.saved}};
 budget_global.INFLOW = 'inflow';
 budget_global.OUTFLOW = 'outflow';
 
@@ -143,16 +142,21 @@ function calc_partials(flow) {
 }
 
 function calc_cumu() {
-    var cumu_total = 0;
+    var cumu_total = budget_global.SAVED;
     for (var year = budget_global.CURRENT_YEAR; year <= budget_global.PROGRAM_LENGTH; year++) {
         for (var i = 0; i < budget_global.TERMS.length; i++) {
-
+            $('#' + year + budget_global.TERMS[i] + '_cumu_sum').html(cumu_total);
             var inflow = parseFloat($('#' + year + budget_global.TERMS[i] + '_inflow_sum').html());
             var outflow = parseFloat($('#' + year + budget_global.TERMS[i] + '_outflow_sum').html());
             var term_balance = inflow - outflow;
             cumu_total += term_balance;
             $('#' + year + budget_global.TERMS[i] + '_term_sum').html(term_balance);
-            $('#' + year + budget_global.TERMS[i] + '_cumu_sum').html(cumu_total);
+            if (cumu_total < 0) {
+                $('#' + year + budget_global.TERMS[i] + '_term_need').html(cumu_total);
+                cumu_total = 0;
+            } else {
+                $('#' + year + budget_global.TERMS[i] + '_term_need').html('0');
+            }
         }
     }
 }

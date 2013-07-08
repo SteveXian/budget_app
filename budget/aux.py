@@ -46,6 +46,7 @@ def initiate_user_preset_data(program, user):
             coop = True if user.sequence[cnt] == 'W' else False
             program_data  = data_set.filter(year=year, coop=coop)
             for data in program_data:
+                print data.label
                 if user.sequence[cnt] == 'O':
                     data.amount = 0;
                 if data.label == 'School' and user.sequence[cnt] == 'S':
@@ -62,7 +63,6 @@ def initiate_user_preset_data(program, user):
                     created = datetime.today(),
                     modified = datetime.today(),
                 ))
-
             cnt += 1
     BudgetPlanningData.objects.bulk_create(inserts)
 
