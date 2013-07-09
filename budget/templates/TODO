@@ -10,10 +10,12 @@ add bootstrap tooltips
 
 bug:
 
-top menu glitches a bit when on planning page
-
 make top green section extend whole way
+study sequence messed up
+cannot generate data/bad data in some cases after intro
 
-
+Big things:
 0's for the previous terms and greyed out
 highlight the current term
+help text
+term

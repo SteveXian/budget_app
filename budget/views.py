@@ -88,21 +88,24 @@ def user_update(request):
 
 @login_required
 def user(request):
-    budget_user = BudgetUser.objects.get(user_id=request.user.id)
-    print budget_user.user_id
-    data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
+    try:
+        budget_user = BudgetUser.objects.get(user_id=request.user.id)
+        print budget_user.user_id
+        data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
 
-    data = format_data_for_view(budget_user, data_set)
-    budget_user.remaining_years = range(budget_user.current_year, budget_user.program_length + 1)
-    budget_user.remaining_terms = []
-    for i in range(0, budget_user.program_length + 1 - budget_user.current_year):
-        budget_user.remaining_terms.append("Fall(" + budget_user.sequence[(i*3)+0] +")")
-        budget_user.remaining_terms.append("Winter(" + budget_user.sequence[(i*3)+1] +")")
-        budget_user.remaining_terms.append("Spring(" + budget_user.sequence[(i*3)+2] +")")
-    return render(request, 'user.html', {
-        'budget_user':budget_user,
-        'data':data,
-    })
+        data = format_data_for_view(budget_user, data_set)
+        budget_user.remaining_years = range(budget_user.current_year, budget_user.program_length + 1)
+        budget_user.remaining_terms = []
+        for i in range(0, budget_user.program_length + 1 - budget_user.current_year):
+            budget_user.remaining_terms.append("Fall(" + budget_user.sequence[(i*3)+0] +")")
+            budget_user.remaining_terms.append("Winter(" + budget_user.sequence[(i*3)+1] +")")
+            budget_user.remaining_terms.append("Spring(" + budget_user.sequence[(i*3)+2] +")")
+        return render(request, 'user.html', {
+            'budget_user':budget_user,
+            'data':data,
+        })
+    except:
+        return render(request, 'intro.html', {'new_user': True, 'error': True})
 
 @login_required 
 @csrf_exempt
@@ -120,14 +123,17 @@ def planning_update(request):
 
 @login_required 
 def tracking(request):
-    data = BudgetTrackingData.objects.filter(user_id=request.user.id).order_by('-created')
+    try:
+        data = BudgetTrackingData.objects.filter(user_id=request.user.id).order_by('-created')
 
-    limits = get_limits(request.user.id)    
+        limits = get_limits(request.user.id)    
 
-    return render(request, 'tracking.html', {
-        'data': data,
-        'limits': limits,
-    })
+        return render(request, 'tracking.html', {
+            'data': data,
+            'limits': limits,
+        })
+    except:
+        return render(request, 'intro.html', {'new_user': True, 'error': True})
 
 @login_required 
 @csrf_exempt

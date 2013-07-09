@@ -10,6 +10,13 @@
     <h2>Thanks for signing up!<br/>
         First, we need to get to know you better.</h2>
 </div>  
+{% if error %}
+<div class="alert alert-error">  
+    <a class="close" data-dismiss="alert">×</a>  
+    <h4>Oops there has been an error! Just refill this out and you should be all set!</h4>
+    Our trained monkeys are working on it right now.
+</div> 
+{% endif %}
 <div id ="intro1" class="container">  
 <form id='user_info' class="form-horizontal" action='/user/update/' method="POST">  
     <div class="row spaced-out">
