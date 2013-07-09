@@ -73,11 +73,11 @@ def user_update(request):
     user.saved = Decimal(sanitize_decimal(request.POST['saved']))
     user.part_time = 0
     user.program_length = user.end_year - user.start_year
-    user.current_year = datetime.now().year - user.start_year + 1
+    user.current_year = datetime.now().year - user.start_year
     if user.current_term == 1: #in case that the current term is the fall term
         user.current_year += 1
-    if user.current_year > user.program_length: #handle the case where the student is in their last two semesters
-        user.current_year = user.program_length
+    if user.current_year == 0: #handle the case where the student hasn't started school yet
+        user.current_year = 1
 
     user.coop = request.POST['coop']
     user.sequence = request.POST['sequence']
