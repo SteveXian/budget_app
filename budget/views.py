@@ -76,6 +76,8 @@ def user_update(request):
     user.current_year = datetime.now().year - user.start_year + 1
     if user.current_term == 1: #in case that the current term is the fall term
         user.current_year += 1
+    if user.current_year > user.program_length: #handle the case where the student is in their last two semesters
+        user.current_year = user.program_length
 
     user.coop = request.POST['coop']
     user.sequence = request.POST['sequence']
