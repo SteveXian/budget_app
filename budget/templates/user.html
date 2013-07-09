@@ -37,9 +37,9 @@
         <tr>
             <td><b>Beginning Balance</b></td>
             {% for year in budget_user.remaining_years %}
-            <td><div id="{{year}}F_cumu_sum"></div> </td>
-            <td><div id="{{year}}W_cumu_sum"></div></td>
-            <td><div id="{{year}}S_cumu_sum"></div></td>
+            <td style="color:green;"><div id="{{year}}F_cumu_sum"></div> </td>
+            <td style="color:green;"><div id="{{year}}W_cumu_sum"></div></td>
+            <td style="color:green;"><div id="{{year}}S_cumu_sum"></div></td>
             {% endfor %}
         </tr>
 
@@ -50,16 +50,16 @@
         <tr>
             <td>{{row.label}}</td>
             {% for item in row.data %}
-            <td><div class="edit {{item.class}}_inflow" id="{{item.id}}">{{item.amount}}</div> </td>
+            <td style="color:green;"><div class="edit {{item.class}}_inflow" id="{{item.id}}">{{item.amount}}</div> </td>
             {% endfor %}
         </tr>
         {% endfor %}
         <tr>
             <td><b>Total Income</b></td>
             {% for year in budget_user.remaining_years %}
-            <td><div id="{{year}}F_inflow_sum"></div> </td>
-            <td><div id="{{year}}W_inflow_sum"></div></td>
-            <td><div id="{{year}}S_inflow_sum"></div></td>
+            <td style="color:green;"><div id="{{year}}F_inflow_sum"></div> </td>
+            <td style="color:green;"><div id="{{year}}W_inflow_sum"></div></td>
+            <td style="color:green;"><div id="{{year}}S_inflow_sum"></div></td>
             {% endfor %}
         </tr>
         <tr>
@@ -74,7 +74,7 @@
         <tr>
             <td>{{row.label}}</td>
             {% for item in row.data %}
-            <td><div class="edit {{item.class}}_outflow" id="{{item.id}}">{{item.amount}}</div> </td>
+            <td style="color:red;"><div class="edit {{item.class}}_outflow" id="{{item.id}}">{{item.amount}}</div> </td>
             {% endfor %}
         </tr>
         {% endfor %}
@@ -82,9 +82,9 @@
         <tr>
             <td><b>Total Outflow</b></td>
             {% for year in budget_user.remaining_years %}
-            <td><div id="{{year}}F_outflow_sum"></div> </td>
-            <td><div id="{{year}}W_outflow_sum"></div></td>
-            <td><div id="{{year}}S_outflow_sum"></div></td>
+            <td style="color:red;"><div id="{{year}}F_outflow_sum"></div> </td>
+            <td style="color:red;"><div id="{{year}}W_outflow_sum"></div></td>
+            <td style="color:red;"><div id="{{year}}S_outflow_sum"></div></td>
             {% endfor %}
         </tr>
         <tr>
@@ -102,9 +102,9 @@
         <tr>
             <td><b>Money Needed</b></td>
             {% for year in budget_user.remaining_years %}
-            <td><div id="{{year}}F_term_need"></div> </td>
-            <td><div id="{{year}}W_term_need"></div></td>
-            <td><div id="{{year}}S_term_need"></div></td>
+            <td style="color:red;"><div id="{{year}}F_term_need"></div> </td>
+            <td style="color:red;"><div id="{{year}}W_term_need"></div></td>
+            <td style="color:red;"><div id="{{year}}S_term_need"></div></td>
             {% endfor %}
         </tr>
 
@@ -150,7 +150,11 @@ function calc_cumu() {
             var outflow = parseFloat($('#' + year + budget_global.TERMS[i] + '_outflow_sum').html());
             var term_balance = inflow - outflow;
             cumu_total += term_balance;
-            $('#' + year + budget_global.TERMS[i] + '_term_sum').html(term_balance);
+            if (term_balance > 0) {
+                $('#' + year + budget_global.TERMS[i] + '_term_sum').html('<span style="color:green;">' + term_balance  + '</span>');
+            } else {
+                $('#' + year + budget_global.TERMS[i] + '_term_sum').html('<span style="color:red;">' + term_balance  + '</span>');
+            }
             if (cumu_total < 0) {
                 $('#' + year + budget_global.TERMS[i] + '_term_need').html(cumu_total);
                 cumu_total = 0;
