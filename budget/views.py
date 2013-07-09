@@ -61,9 +61,9 @@ def user_update(request):
         user = BudgetUser()
 
     user.user_id = user_id
-    if (datetime.now().month >=9):
+    if datetime.now().month >= 9:
         user.current_term = 1
-    elif (datetime.now().month >=5):
+    elif datetime.now().month >=5 :
         user.current_term = 3
     else:
         user.current_term = 2
@@ -73,7 +73,10 @@ def user_update(request):
     user.saved = Decimal(sanitize_decimal(request.POST['saved']))
     user.part_time = 0
     user.program_length = user.end_year - user.start_year
-    user.current_year = datetime.now().year - user.start_year
+    user.current_year = datetime.now().year - user.start_year + 1
+    if user.current_term == 1: #in case that the current term is the fall term
+        user.current_year += 1
+
     user.coop = request.POST['coop']
     user.sequence = request.POST['sequence']
 
@@ -87,25 +90,24 @@ def user_update(request):
     return redirect('/planning/')
 
 @login_required
-def user(request):
-    try:
-        budget_user = BudgetUser.objects.get(user_id=request.user.id)
-        print budget_user.user_id
-        data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
+def planning(request):
+    #try:
+    budget_user = BudgetUser.objects.get(user_id=request.user.id)
+    data_set = BudgetPlanningData.objects.filter(user_id = request.user.id)
 
-        data = format_data_for_view(budget_user, data_set)
-        budget_user.remaining_years = range(budget_user.current_year, budget_user.program_length + 1)
-        budget_user.remaining_terms = []
-        for i in range(0, budget_user.program_length + 1 - budget_user.current_year):
-            budget_user.remaining_terms.append("Fall(" + budget_user.sequence[(i*3)+0] +")")
-            budget_user.remaining_terms.append("Winter(" + budget_user.sequence[(i*3)+1] +")")
-            budget_user.remaining_terms.append("Spring(" + budget_user.sequence[(i*3)+2] +")")
-        return render(request, 'user.html', {
-            'budget_user':budget_user,
-            'data':data,
-        })
-    except:
-        return render(request, 'intro.html', {'new_user': True, 'error': True})
+    data = format_data_for_view(budget_user, data_set)
+    budget_user.remaining_years = range(budget_user.current_year, budget_user.program_length + 1)
+    budget_user.remaining_terms = []
+    for i in range(budget_user.current_year-1, budget_user.program_length):
+        budget_user.remaining_terms.append("Fall(" + budget_user.sequence[(i*3)+0] +")")
+        budget_user.remaining_terms.append("Winter(" + budget_user.sequence[(i*3)+1] +")")
+        budget_user.remaining_terms.append("Spring(" + budget_user.sequence[(i*3)+2] +")")
+    return render(request, 'planning.html', {
+        'budget_user':budget_user,
+        'data':data,
+    })
+    #except:
+    #   return render(request, 'intro.html', {'new_user': True, 'error': True})
 
 @login_required 
 @csrf_exempt

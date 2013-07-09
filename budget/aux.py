@@ -38,15 +38,15 @@ def parse_preset_data(data_set):
     BudgetPresetData.objects.bulk_create(inserts)
 
 def initiate_user_preset_data(program, user):
+    print user.user_id
     inserts = []
     data_set = BudgetPresetData.objects.filter(program=program)
-    cnt = 0
+    cnt = (user.current_year-1)*3
     for year in range(user.current_year, user.program_length+1):
         for term in [FALL, WINTER, SPRING]:
             coop = True if user.sequence[cnt] == 'W' else False
             program_data  = data_set.filter(year=year, coop=coop)
             for data in program_data:
-                print data.label
                 if user.sequence[cnt] == 'O':
                     data.amount = 0;
                 if data.label == 'School' and user.sequence[cnt] == 'S':

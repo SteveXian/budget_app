@@ -1,0 +1,101 @@
+2013-07-09T22:17:51.565443+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+2013-07-09T22:17:51.565443+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapped_view
+2013-07-09T22:17:51.565443+00:00 app[web.1]: Traceback (most recent call last):
+2013-07-09T22:17:51.565443+00:00 app[web.1]: Internal Server Error: /user/update/
+2013-07-09T22:17:51.565658+00:00 app[web.1]:     initiate_user_preset_data('default', user)
+2013-07-09T22:17:51.565443+00:00 app[web.1]:     return func(request, *args, **kwargs)
+2013-07-09T22:17:51.565658+00:00 app[web.1]: IndexError: string index out of range
+2013-07-09T22:17:51.565443+00:00 app[web.1]:     response = callback(request, *callback_args, **callback_kwargs)
+2013-07-09T22:17:51.565658+00:00 app[web.1]:   File "/app/budget/aux.py", line 46, in initiate_user_preset_data
+2013-07-09T22:17:51.565443+00:00 app[web.1]:     return view_func(*args, **kwargs)
+2013-07-09T22:17:51.565443+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+2013-07-09T22:17:51.565658+00:00 app[web.1]:   File "/app/budget/views.py", line 85, in user_update
+2013-07-09T22:17:51.565658+00:00 app[web.1]:     coop = True if user.sequence[cnt] == 'W' else False
+2013-07-09T22:17:51.565443+00:00 app[web.1]:     return view_func(request, *args, **kwargs)
+2013-07-09T22:17:51.565443+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/views/decorators/http.py", line 41, in inner
+2013-07-09T22:17:36.073033+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.91" dyno=web.1 connect=58ms service=612ms status=200 bytes=14447
+2013-07-09T22:16:56.696860+00:00 heroku[router]: at=info method=GET path=/tracking/delete/9 host=damp-brook-6771.herokuapp.com fwd="129.97.124.91" dyno=web.1 connect=5ms service=190ms status=302 bytes=5
+2013-07-09T22:18:02.959786+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-09 17:18:02.954363) while time zone support is active.
+2013-07-09T22:18:02.959786+00:00 app[web.1]: 
+2013-07-09T22:18:02.959786+00:00 app[web.1]:   RuntimeWarning)
+2013-07-09T22:17:51.700498+00:00 heroku[router]: at=info method=POST path=/user/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.63" dyno=web.1 connect=1ms service=368ms status=500 bytes=78698
+2013-07-09T22:18:02.964513+00:00 heroku[router]: at=info method=POST path=/planning/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.83" dyno=web.1 connect=1ms service=106ms status=200 bytes=16
+2013-07-09T22:18:06.929093+00:00 app[web.1]: {'term': [{'over': False, 'current': 0, 'label': u'School', 'limit': '0.00'}, {'over': False, 'current': 0, 'label': u'Housing', 'limit': '2400.00'}, {'over': False, 'current': 0, 'label': u'Transportation', 'limit': '200.00'}, {'over': False, 'current': 0, 'label': u'Food', 'limit': '1200.00'}, {'over': False, 'current': 0, 'label': u'Other', 'limit': '1600.00'}], 'monthly': [{'over': False, 'current': 0, 'label': u'School', 'limit': '0.00'}, {'over': False, 'current': 0, 'label': u'Housing', 'limit': '600.00'}, {'over': False, 'current': 0, 'label': u'Transportation', 'limit': '50.00'}, {'over': False, 'current': 0, 'label': u'Food', 'limit': '300.00'}, {'over': False, 'current': 0, 'label': u'Other', 'limit': '400.00'}], 'weekly': [{'over': False, 'current': 0, 'label': u'School', 'limit': '0.00'}, {'over': False, 'current': 0, 'label': u'Housing', 'limit': '140.00'}, {'over': False, 'current': 0, 'label': u'Transportation', 'limit': '11.67'}, {'over': False, 'current': 0, 'label': u'Food', 'limit': '70.0
+2013-07-09T22:18:06.929487+00:00 app[web.1]: 0'}, {'over': False, 'current': 0, 'label': u'Other', 'limit': '93.33'}]}
+2013-07-09T22:18:06.954918+00:00 heroku[router]: at=info method=GET path=/tracking/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.83" dyno=web.1 connect=1ms service=321ms status=200 bytes=8525
+2013-07-09T22:18:07.070184+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.83" dyno=web.1 connect=1ms service=14ms status=404 bytes=1766
+2013-07-09T22:18:18.358833+00:00 app[web.1]: <QueryDict: {u'tuition': [u'3000'], u'coop': [u'False'], u'sequence': [u'SSOSSOSSOSSO'], u'end_year': [u'2018'], u'saved': [u'5000'], u'start_year': [u'2014']}>
+2013-07-09T22:18:18.486033+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-09 17:18:18.425436) while time zone support is active.
+2013-07-09T22:18:18.486033+00:00 app[web.1]:   RuntimeWarning)
+2013-07-09T22:18:18.486033+00:00 app[web.1]: 
+2013-07-09T22:18:18.836395+00:00 app[web.1]: School
+2013-07-09T22:18:18.867309+00:00 app[web.1]: Transportation
+2013-07-09T22:18:18.867309+00:00 app[web.1]: Housing
+2013-07-09T22:18:18.877225+00:00 app[web.1]: Food
+2013-07-09T22:18:18.877583+00:00 app[web.1]: Part Time
+2013-07-09T22:18:18.881635+00:00 app[web.1]: Scholarship
+2013-07-09T22:18:18.879588+00:00 app[web.1]: Full Time
+2013-07-09T22:18:18.877225+00:00 app[web.1]: Other
+2013-07-09T22:18:18.912109+00:00 app[web.1]: Transportation
+2013-07-09T22:18:18.910215+00:00 app[web.1]: School
+2013-07-09T22:18:18.918106+00:00 app[web.1]: Other
+2013-07-09T22:18:18.919417+00:00 app[web.1]: Part Time
+2013-07-09T22:18:18.915931+00:00 app[web.1]: Housing
+2013-07-09T22:18:18.918234+00:00 app[web.1]: Food
+2013-07-09T22:18:18.919724+00:00 app[web.1]: Full Time
+2013-07-09T22:18:18.920197+00:00 app[web.1]: Scholarship
+2013-07-09T22:18:18.941595+00:00 app[web.1]: School
+2013-07-09T22:18:18.941977+00:00 app[web.1]: Housing
+2013-07-09T22:18:18.942427+00:00 app[web.1]: Other
+2013-07-09T22:18:18.942713+00:00 app[web.1]: Part Time
+2013-07-09T22:18:18.942585+00:00 app[web.1]: Food
+2013-07-09T22:18:18.941824+00:00 app[web.1]: Transportation
+2013-07-09T22:18:18.942924+00:00 app[web.1]: Full Time
+2013-07-09T22:18:18.945863+00:00 app[web.1]: Scholarship
+2013-07-09T22:18:18.970440+00:00 app[web.1]: School
+2013-07-09T22:18:18.968735+00:00 app[web.1]: Food
+2013-07-09T22:18:18.971947+00:00 app[web.1]: Transportation
+2013-07-09T22:18:18.972774+00:00 app[web.1]: Full Time
+2013-07-09T22:18:18.972621+00:00 app[web.1]: Part Time
+2013-07-09T22:18:18.972108+00:00 app[web.1]: Housing
+2013-07-09T22:18:18.972980+00:00 app[web.1]: Scholarship
+2013-07-09T22:18:18.972424+00:00 app[web.1]: Other
+2013-07-09T22:18:18.995942+00:00 app[web.1]: Transportation
+2013-07-09T22:18:18.995392+00:00 app[web.1]: School
+2013-07-09T22:18:18.994899+00:00 app[web.1]: Food
+2013-07-09T22:18:19.000415+00:00 app[web.1]: Scholarship
+2013-07-09T22:18:18.999385+00:00 app[web.1]: Other
+2013-07-09T22:18:18.999668+00:00 app[web.1]: Part Time
+2013-07-09T22:18:18.999039+00:00 app[web.1]: Housing
+2013-07-09T22:18:19.000038+00:00 app[web.1]: Full Time
+2013-07-09T22:18:19.020536+00:00 app[web.1]: Transportation
+2013-07-09T22:18:19.020095+00:00 app[web.1]: School
+2013-07-09T22:18:19.022453+00:00 app[web.1]: Part Time
+2013-07-09T22:18:19.022125+00:00 app[web.1]: Other
+2013-07-09T22:18:19.023129+00:00 app[web.1]: Scholarship
+2013-07-09T22:18:19.019431+00:00 app[web.1]: Food
+2013-07-09T22:18:19.031614+00:00 app[web.1]: Internal Server Error: /user/update/
+2013-07-09T22:18:19.020989+00:00 app[web.1]: Housing
+2013-07-09T22:18:19.022716+00:00 app[web.1]: Full Time
+2013-07-09T22:18:19.031614+00:00 app[web.1]: Traceback (most recent call last):
+2013-07-09T22:18:19.031614+00:00 app[web.1]:     return view_func(*args, **kwargs)
+2013-07-09T22:18:19.031614+00:00 app[web.1]:     return view_func(request, *args, **kwargs)
+2013-07-09T22:18:19.031614+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+2013-07-09T22:18:19.031614+00:00 app[web.1]:     return func(request, *args, **kwargs)
+2013-07-09T22:18:19.031614+00:00 app[web.1]:     response = callback(request, *callback_args, **callback_kwargs)
+2013-07-09T22:18:19.031614+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+2013-07-09T22:18:19.031614+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/views/decorators/http.py", line 41, in inner
+2013-07-09T22:18:19.031614+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 25, in _wrapped_view
+2013-07-09T22:18:19.031953+00:00 app[web.1]:     initiate_user_preset_data('default', user)
+2013-07-09T22:18:19.031953+00:00 app[web.1]:   File "/app/budget/aux.py", line 46, in initiate_user_preset_data
+2013-07-09T22:18:19.031953+00:00 app[web.1]:     coop = True if user.sequence[cnt] == 'W' else False
+2013-07-09T22:18:19.031953+00:00 app[web.1]:   File "/app/budget/views.py", line 85, in user_update
+2013-07-09T22:18:19.031953+00:00 app[web.1]: IndexError: string index out of range
+2013-07-09T22:18:21.532838+00:00 heroku[router]: at=info method=POST path=/user/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.63" dyno=web.1 connect=2ms service=3323ms status=500 bytes=78698
+2013-07-09T22:18:27.507712+00:00 app[web.1]:   RuntimeWarning)
+2013-07-09T22:18:27.507712+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-07-09 17:18:27.384565) while time zone support is active.
+2013-07-09T22:18:27.507712+00:00 app[web.1]: 
+2013-07-09T22:18:27.546570+00:00 heroku[router]: at=info method=POST path=/planning/update/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.91" dyno=web.1 connect=4ms service=312ms status=200 bytes=17
+2013-07-09T22:18:32.336697+00:00 app[web.1]: 29
+2013-07-09T22:18:34.528313+00:00 heroku[router]: at=info method=GET path=/static/budget/js/bootstrap-responsive.min.js host=damp-brook-6771.herokuapp.com fwd="129.97.124.83" dyno=web.1 connect=1ms service=148ms status=404 bytes=1766
+2013-07-09T22:18:33.966859+00:00 heroku[router]: at=info method=GET path=/planning/ host=damp-brook-6771.herokuapp.com fwd="129.97.124.83" dyno=web.1 connect=1ms service=1892ms status=200 bytes=10460
