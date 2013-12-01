@@ -23,7 +23,7 @@ def index(request):
         return redirect('/intro/')
 
 def user_login(request):
-    return render(request, 'intro.html', {})
+    return render(request, 'login.html', {})
 
 def user_logout(request):
     logout(request)
