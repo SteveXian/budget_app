@@ -23,7 +23,7 @@ def index(request):
         return redirect('/intro/')
 
 def user_login(request):
-    return render(request, 'intro.html', {})
+    return render(request, 'login.html', {})
 
 def user_logout(request):
     logout(request)
@@ -101,7 +101,7 @@ def user_update(request):
             incomeOutput = False
         for j in range(0,5):
             inserts.append(BudgetPresetData(
-                    subject = str(user_id),
+                    program = str(user_id),
                     label = labelssplit[i],
                     year = j+1,
                     income = incomeOutput+1,
@@ -109,7 +109,7 @@ def user_update(request):
                     amount = Decimal(amountssplit[i]),
             ))
             inserts.append(BudgetPresetData(
-                    subject = str(user_id),
+                    program = str(user_id),
                     label = labelssplit[i],
                     year = j+1,
                     income = incomeOutput+1,
