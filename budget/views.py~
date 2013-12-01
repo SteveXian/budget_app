@@ -91,10 +91,8 @@ def user_update(request):
     labels = request.POST['subjectv']
     amounts= request.POST['amountv']
     incomes= request.POST['budgetType']
-    labelssplit    = labels.split(',')
-    labelsreal = [','.join(labelssplit[n:]) for n in range(len(labelssplit))]
-    amountssplit    = amounts.split(',')
-    amountsreal = [','.join(amountssplit[n:]) for n in range(len(amountssplit))]
+    labelssplit = labels.split(',')
+    amountssplit = amounts.split(',')
     rowlength = int(request.POST['rowLength'])
     for i in range(0,rowlength):
         if incomes[i] == "I":
@@ -104,19 +102,19 @@ def user_update(request):
         for j in range(0,5):
             inserts.append(BudgetPresetData(
                     subject = str(user_id),
-                    label = labelsreal[i],
+                    label = labelssplit[i],
                     year = j+1,
                     income = incomeOutput+1,
                     coop = True,
-                    amount = Decimal(amountsreal[i]),
+                    amount = Decimal(amountssplit[i]),
             ))
             inserts.append(BudgetPresetData(
                     subject = str(user_id),
-                    label = labelsreal[i],
+                    label = labelssplit[i],
                     year = j+1,
                     income = incomeOutput+1,
                     coop = False,
-                    amount = Decimal(amountsreal[i]),
+                    amount = Decimal(amountssplit[i]),
             ))
     BudgetPresetData.objects.bulk_create(inserts)
 #NEED A FOR LOOP IN RANGE FOR NUMBER OF TABLE ROWS IN THE THIRD DIV I THINK
