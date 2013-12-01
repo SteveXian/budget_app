@@ -202,7 +202,7 @@ $("#addrow").on("click", function () {
     var count = $('#uTable').children().length;
     var cols = "";
     var newRow = $("<tr>");
-    cols += '<td><select id="' + budgetTypeId + '" name="' + budgetTypeId + '"><option value="1">Income</option value="2"><option>Expense</option> </select></td>';
+    cols += '<td><select id="' + budgetTypeId + '" name="' + budgetTypeId + '"><option value="1">Income</option><option value="2">Expense</option> </select></td>';
     cols += '<td><input type="text" id="' + subjectId + '" name="' + subjectId + '"></input></td>';
     cols += '<td><input type="text" id="' + amountId + '" name="' + amountId + '" placeholder="' + test + '" ></input></td>';
     cols += '<td><select id="' + oftenId + '" name="' + oftenId + '"><option>Per Term</option> </select></td>';
@@ -284,7 +284,7 @@ $(function(){
         var sequence = '';
         for (var year = start; year<end; year++) {
             for (var term =0;term <3;term++) {
-                var val = $('#'+year+'_'+term).text();
+                var val = $('#'+year+'_'+term).find('option:selected').text();
                 if (val == 'Study') {
                     sequence += 'S';
                 } else if (val == 'Work') {
@@ -304,8 +304,8 @@ $(function(){
         var amount = '';
         for (var initialRow = 0; initialRow<totalRows; initialRow++) {
          var val1 = $('#budget_type'+initialRow).val();
-         var val2 = $('#subject'+initialRow).text();
-         var val3 = $('#amount'+initialRow).text();
+         var val2 = $('#subject'+initialRow).val();
+         var val3 = $('#amount'+initialRow).val();
          if(val1== 1){
             budgetType += 'I';
          } else if (val1 == 2) {
@@ -331,7 +331,7 @@ $(function(){
 
         $('#sequence').val(sequence);
         if(!$('#saved').val()) {
-            alert("Please Fill In The Amount you have saved!");
+            alert("Please Fill in amount Saved!");
             return false;
         }
         if(!$('#loans').val()) {
