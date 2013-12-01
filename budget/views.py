@@ -108,7 +108,7 @@ def user_update(request):
                     year = j+1,
                     income = incomeOutput+1,
                     coop = True,
-                    amount = Decimal(amountsreal[i]),
+                    amount = amountsreal[i],
             ))
             inserts.append(BudgetPresetData(
                     subject = str(user_id),
@@ -116,7 +116,7 @@ def user_update(request):
                     year = j+1,
                     income = incomeOutput+1,
                     coop = False,
-                    amount = Decimal(amountsreal[i]),
+                    amount = amountsreal[i],
             ))
     BudgetPresetData.objects.bulk_create(inserts)
 #NEED A FOR LOOP IN RANGE FOR NUMBER OF TABLE ROWS IN THE THIRD DIV I THINK

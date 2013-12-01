@@ -80,7 +80,7 @@ def user_update(request):
     if user.current_year == 0: #handle the case where the student hasn't started school yet
         user.current_year = 1
 
-    user.coop = request.POST['coop']
+    
     user.sequence = request.POST['sequence']
 
     user.save()
