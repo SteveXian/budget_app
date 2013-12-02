@@ -178,11 +178,16 @@
             </tbody>
         </table>
         <a id= "addrow" href=''
-           >Add Author</a>
+           >Add Another</a>
         <input type="hidden" id="rowCounter" name="rowCounter" value="0"> </input>
     </div>
-    <div class="span3">
-         <a class="btn btn-large btn-block btn-primary" onclick="form_submit();">Next!</a>
+    <div class="row spaced-out" style="text-align:center;">
+        <div class="offset3 span3">
+            <a class="btn btn-large btn-block btn-primary" onclick="intro4();">Back</a>
+        </div>
+        <div class="span3">
+            <a class="btn btn-large btn-block btn-primary" onclick="form_submit();">Next!</a>
+        </div>
     </div>
 </div>
 
@@ -274,6 +279,10 @@ function intro3(){
     $('#intro3').show();
 }
 
+function intro4(){
+    $('#intro3').hide();
+    $('#intro2').show();
+}
 
 $(function(){
     $('#intro2').hide();
