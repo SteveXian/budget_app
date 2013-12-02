@@ -104,7 +104,7 @@ def user_update(request):
                     program = str(user_id),
                     label = labelssplit[i],
                     year = j+1,
-                    income = incomeOutput+1,
+                    income = incomeOutput,
                     coop = True,
                     amount = Decimal(amountssplit[i]),
             ))
@@ -112,7 +112,7 @@ def user_update(request):
                     program = str(user_id),
                     label = labelssplit[i],
                     year = j+1,
-                    income = incomeOutput+1,
+                    income = incomeOutput,
                     coop = False,
                     amount = Decimal(amountssplit[i]),
             ))
